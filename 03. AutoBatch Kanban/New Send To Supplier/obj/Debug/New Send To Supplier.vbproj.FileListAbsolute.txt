@@ -1,0 +1,168 @@
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Data.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojResolveAssemblyReference.cache
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.Cache
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.pdb
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.Data.v15.2.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.DataAccess.v15.2.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.XtraReports.v15.2.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.Data.v15.2.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.DataAccess.v15.2.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\DevExpress.XtraReports.v15.2.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\de\DevExpress.DataAccess.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\es\DevExpress.DataAccess.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ja\DevExpress.DataAccess.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ru\DevExpress.DataAccess.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\de\DevExpress.XtraReports.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\es\DevExpress.XtraReports.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ja\DevExpress.XtraReports.v15.2.resources.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\ru\DevExpress.XtraReports.v15.2.resources.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Data.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojResolveAssemblyReference.cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.Cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Data.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojResolveAssemblyReference.cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Data.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojResolveAssemblyReference.cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojResolveAssemblyReference.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.Cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Data.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\System.Data.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\System.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojAssemblyReference.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.CoreCompileInputs.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.CopyComplete
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\New Send To Supplier\obj\Debug\Send To Supplier.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\System.Data.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\System.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbprojAssemblyReference.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.KanbanCard2.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New_Send_To_Supplier.Resources.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.GenerateResource.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe.licenses
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.CoreCompileInputs.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\New Send To Supplier.vbproj.CopyComplete
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\Send To Supplier.exe
+D:\PPS\maj VS pps\03. AutoBatch Kanban\New Send To Supplier\obj\Debug\Send To Supplier.pdb

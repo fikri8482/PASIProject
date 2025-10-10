@@ -1,0 +1,50 @@
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.pdb
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.Resources.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.vbproj.GenerateResource.Cache
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.Resources.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.vbproj.GenerateResource.Cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\bin\Debug\GlobalSetting.xml
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.Resources.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.vbproj.GenerateResource.Cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.xml
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban\GlobalSetting\obj\Debug\GlobalSetting.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\bin\Debug\GlobalSetting.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\bin\Debug\GlobalSetting.pdb
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\bin\Debug\GlobalSetting.xml
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.vbprojAssemblyReference.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.Resources.resources
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.vbproj.GenerateResource.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.vbproj.CoreCompileInputs.cache
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.dll
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.xml
+D:\PPS\06. Source Code\99. BATCH PROCESS PASI SYSTEM Kanban - DEV\GlobalSetting\obj\Debug\GlobalSetting.pdb

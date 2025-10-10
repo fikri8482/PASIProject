@@ -1,0 +1,203 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GlobalSetting
+</name>
+</assembly>
+<members>
+<member name="T:GlobalSetting.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:GlobalSetting.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:GlobalSetting.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:GlobalSetting.clsConfig.#ctor(System.String)">
+ <summary>
+ Open config file and store the value in local variables.
+ </summary>
+ <param name="pConfigFile"></param>
+ <remarks></remarks>
+</member>
+<member name="P:GlobalSetting.clsGlobal.Formbackcolor">
+ <summary>
+ Get form backcolor
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:GlobalSetting.clsGlobal.GridBackcolor">
+ <summary>
+ Get grid backcolor
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GlobalSetting.clsGlobal.ConfirmDelete(System.String)">
+ <summary>
+ Message box prompt when user wants to delete data.
+ </summary>
+ <param name="pItemDeleted"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GlobalSetting.clsGlobal.ConfirmCancel">
+ <summary>
+ Message box prompt when user wants to cancel operation.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GlobalSetting.clsGlobal.uf_ConvertMsg(System.String)">
+ <summary>
+ Gets message description from database based on message ID.
+ </summary>
+ <param name="pMsgID">
+ Message ID.
+ </param>
+ <returns>
+ Returns message description.
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GlobalSetting.ClsImport.Copy_fileImport(System.String,System.String,System.String)">
+ <summary>
+ this procedure for Copy File Import
+ </summary>
+ <param name="namefile">NameFile</param>
+ <param name="pScreenName">ScreenName</param>
+ <remarks>
+ 1. create \History\ directory if not create before
+ 2. create \History\Import\ directory if not create before
+ 3. create the ScreenName detail information
+ 4. Copy NameFile and change nameFile to ScreenName
+ 5. keep the Copy file Import from last 30 days until now otherwise will removed
+ </remarks>
+</member>
+<member name="M:GlobalSetting.ClsImport.Copy_fileExport(System.String,System.String)">
+ <summary>
+ this procedure for Copy File Export
+ </summary>
+ <param name="namefile">NameFile</param>
+ <param name="pScreenName">ScreenName</param>
+ <remarks>
+ 1. create \History\ directory if not create before
+ 2. create \History\Export\ directory if not create before
+ 3. create the ScreenName detail information
+ 4. Copy NameFile and change nameFile to ScreenName
+ 5. keep the Copy file Export from last 30 days until now otherwise will removed
+ </remarks>
+</member>
+<member name="M:GlobalSetting.clsLog.uf_ConvertMsg(System.String)">
+ <summary>
+ Gets message description from database based on message ID.
+ </summary>
+ <param name="pLogID">
+ Log ID.
+ </param>
+ <returns>
+ Returns message description.
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GlobalSetting.clsLog.uf_ConvertEventID(System.String)">
+ <summary>
+ Gets event ID from database based on Log ID.
+ </summary>
+ <param name="pLogID">
+ Log ID.
+ </param>
+ <returns>
+ Returns Event ID
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GlobalSetting.clsLog.WriteToErrorLog(System.String,System.String,System.Int32,GlobalSetting.clsLog.ErrSeverity,System.Boolean)">
+ <summary>
+ this procedure for process error log
+ </summary>
+ <param name="pScreenName">Screen Name</param>
+ <param name="pErrSummary">Err Summary</param>
+ <param name="pErrID">Err ID</param>
+ <param name="pErrSeverity">Err Severity</param>
+ <remarks>
+ 1. create \Log\ directory if not create before
+ 2. create \Log\Process\ directory if not create before
+ 3. checking the process log file with the same date if found it will be add the process information with the exist file
+ 4. create the process detail information
+ 5. keep the process log file from last 90 days until now otherwise will removed
+ </remarks>
+</member>
+<member name="M:GlobalSetting.clsLog.WriteToProcessLog(System.DateTime,System.String,System.String,System.String,System.Int32,GlobalSetting.clsLog.ErrSeverity,System.Boolean,System.String,System.Boolean)">
+ <summary>
+ this procedure for process error log
+ </summary>
+ <param name="pStartTime">Start Time</param>
+ <param name="pScreenName">Screen Name</param>
+ <param name="pCustomMsg">Message</param>
+ <param name="pErrSummary">Err Summary</param>
+ <param name="pErrID">Err ID</param>
+ <param name="pErrSeverity">Err Severity</param>
+ <param name="pWriteToEventLog">Write to Event Log</param>
+ <param name="pStartEndStatus">Start or End Status</param>
+ <param name="pUseLogTime">Use Log Time</param>
+ <remarks>
+ 1. create \Log\ directory if not create before
+ 2. create \Log\Process\ directory if not create before
+ 3. checking the process log file with the same date if found it will be add the process information with the exist file
+ 4. create the process detail information
+ 5. keep the process log file from last 90 days until now otherwise will removed
+ </remarks>
+</member>
+<member name="M:GlobalSetting.clsLog.WriteToProcessLog(System.DateTime,System.DateTime,System.String,System.String,System.String,System.String,System.Int32,GlobalSetting.clsLog.ErrSeverity,System.Boolean,System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ this procedure for process error log
+ </summary>
+ <param name="pStartTime">Start Time</param>
+ <param name="pEndTime">End Time</param>
+ <param name="pScreenName">Screen Name</param>
+ <param name="pCustomMsg">Message</param>
+ <param name="pErrSummary">Err Summary</param>
+ <param name="pErrID">Err ID</param>
+ <param name="pErrSeverity">Err Severity</param>
+ <param name="pWriteToEventLog">Write to Event Log</param>
+ <param name="pStartEndStatus">Start or End Status</param>
+ <param name="pUseLogTime">Use Log Time</param>
+ <remarks>
+ 1. create \Log\ directory if not create before
+ 2. create \Log\Process\ directory if not create before
+ 3. checking the process log file with the same date if found it will be add the process information with the exist file
+ 4. create the process detail information
+ 5. keep the process log file from last 90 days until now otherwise will removed
+ </remarks>
+</member>
+<member name="M:GlobalSetting.clsLog.WriteToProcessLog(System.String,System.DateTime,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ this procedure for process error log
+ </summary>
+ <param name="pStartTime">Start Time</param>
+ <param name="pScreenName">Screen Name</param>
+ <param name="pLogID">LogID</param>
+ <param name="pParameters">Parameters Message</param>
+ <remarks>
+ 1. create \Log\ directory if not create before
+ 2. create \Log\Process\ directory if not create before
+ 3. checking the process log file with the same date if found it will be add the process information with the exist file
+ 4. create the process detail information
+ 5. keep the process log file from last 90 days until now otherwise will removed
+ </remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,16 @@
+﻿Time: 26/06/2020 09:30:47 AM
+-----------------------------------------------------------
+Message: Could not find file 'D:\PASI EBWEB\02. TEMPORARY EMAIL ATTACHMENT\BACKUP EMAIL ATTACHMENT\Good Receiving Report--NANBU-SB2005ABMW 26062020 0929.xlsm'.
+StackTrace:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   at System.Net.Mail.AttachmentBase..ctor(String fileName)
+   at System.Net.Mail.Attachment..ctor(String fileName)
+   at UPLOAD.frmUpload.SendEmailEx(List`1 Recipients, List`1 CC, String FromAddress, String Subject, String Body, String UserName, String Password, Boolean EnableSSL, String Server, Int32 Port, String pFile) in D:\GentonG\pro\passsi\visit PASI\Test\06. Upload Attachment\UPLOAD\frmUpload.vb:line 2506
+   at UPLOAD.frmUpload.up_SendEmailEX(String pConstr, String pAffiliateID, String pSupplierID, String pTemplateCode, String pPONo, String pOrderNo, String pSuratJalanNo, String pFileName, String pFwd, Boolean sts) in D:\GentonG\pro\passsi\visit PASI\Test\06. Upload Attachment\UPLOAD\frmUpload.vb:line 2018
+Source: mscorlib
+TargetSite: Void WinIOError(Int32, System.String)
+Error In File D:\PASI EBWEB\02. TEMPORARY EMAIL ATTACHMENT\BACKUP EMAIL ATTACHMENT\Good Receiving Report--NANBU-SB2005ABMW 26062020 0929.xlsm
+-----------------------------------------------------------
+

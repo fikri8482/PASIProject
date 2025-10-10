@@ -1,0 +1,1705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3E9002BA-8360-44D6-910C-37361CB091A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PASISystem</RootNamespace>
+    <AssemblyName>PASISystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PASISystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PASISystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>bin\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Web, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.1.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\PASI EBWEB\Source Code 20150518\02. PASISystem\PASISystem\bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AffiliateOrderExport\AffiliateOrderExportAppDetail.aspx" />
+    <Content Include="AffiliateOrderExport\AffiliateOrderExportAppList.aspx" />
+    <Content Include="AffiliateOrderExport\AffiliateOrderExportDetail.aspx" />
+    <Content Include="AffiliateOrderExport\AffiliateOrderExportList.aspx" />
+    <Content Include="AffiliateOrder\AffiliateOrderAppDetail.aspx" />
+    <Content Include="AffiliateOrder\AffiliateOrderAppList.aspx" />
+    <Content Include="AffiliateOrder\AffiliateOrderDetail.aspx" />
+    <Content Include="AffiliateOrder\AffiliateOrderList.aspx" />
+    <Content Include="AffiliateRevision\AffiliateOrderevEntry.aspx" />
+    <Content Include="AffiliateRevision\AffiliateOrderRevAppDetail.aspx" />
+    <Content Include="AffiliateRevision\AffiliateOrderRevAppList.aspx" />
+    <Content Include="AffiliateRevision\AffiliateOrderRevList.aspx" />
+    <Content Include="AffiliateRevision\PORevHistory.aspx" />
+    <Content Include="AffKanban\AffKanbanCreate.aspx" />
+    <Content Include="AffKanban\AffKanbanList.aspx" />
+    <Content Include="AffKanban\ViewReport.aspx" />
+    <Content Include="Andon\Domestic.aspx" />
+    <Content Include="Andon\Export.aspx" />
+    <Content Include="bin\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\CrystalDecisions.Web.dll" />
+    <Content Include="bin\DevExpress.Data.v14.1.xml" />
+    <Content Include="bin\DevExpress.DataAccess.v14.1.xml" />
+    <Content Include="bin\DevExpress.Office.v14.1.Core.xml" />
+    <Content Include="bin\DevExpress.Printing.v14.1.Core.dll" />
+    <Content Include="bin\DevExpress.RichEdit.v14.1.Core.dll" />
+    <Content Include="bin\DevExpress.Utils.v14.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxThemes.v14.1.dll" />
+    <Content Include="bin\DevExpress.Web.v14.1.dll" />
+    <Content Include="bin\DevExpress.XtraPrinting.v14.1.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v14.1.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v14.1.Web.dll" />
+    <Content Include="bin\de\DevExpress.Data.v14.1.resources.dll" />
+    <Content Include="bin\de\DevExpress.DataAccess.v14.1.resources.dll" />
+    <Content Include="bin\de\DevExpress.Office.v14.1.Core.resources.dll" />
+    <Content Include="bin\EPPlus.dll" />
+    <Content Include="bin\es\DevExpress.Data.v14.1.resources.dll" />
+    <Content Include="bin\es\DevExpress.DataAccess.v14.1.resources.dll" />
+    <Content Include="bin\es\DevExpress.Office.v14.1.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Data.v14.1.resources.dll" />
+    <Content Include="bin\ja\DevExpress.DataAccess.v14.1.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Office.v14.1.Core.resources.dll" />
+    <Content Include="bin\PASISystem.dll" />
+    <Content Include="bin\PASISystem.pdb" />
+    <Content Include="bin\PASISystem.xml" />
+    <Content Include="bin\ru\DevExpress.Data.v14.1.resources.dll" />
+    <Content Include="bin\ru\DevExpress.DataAccess.v14.1.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Office.v14.1.Core.resources.dll" />
+    <Content Include="DeliveryExport\DeliveryExportForm.aspx" />
+    <Content Include="DeliveryExport\viewDeliveryToFor.aspx" />
+    <Content Include="DeliveryExport\DeliveryToForEntry.aspx" />
+    <Content Include="DeliveryExport\DeliveryToForList.aspx" />
+    <Content Include="DeliveryExport\TallyDataForm.aspx" />
+    <Content Include="DeliveryExport\DeliveryExportUpload.aspx" />
+    <Content Include="DeliveryExport\DeliveryToAffListExport.aspx" />
+    <Content Include="DeliveryExport\GoodReceivingReportExport.aspx" />
+    <Content Include="DeliveryExport\Palletizing.aspx" />
+    <Content Include="DeliveryExport\ReceivingEntryExport.aspx" />
+    <Content Include="Delivery\DeliveryPerformReport.aspx" />
+    <Content Include="Delivery\DeliveryToAffEntry.aspx" />
+    <Content Include="Delivery\DeliveryToAffList.aspx" />
+    <Content Include="Delivery\viewDeliveryToAff.aspx" />
+    <Content Include="EmailMonitoring\EmailMonitoring.aspx" />
+    <Content Include="Forecast\ForecastRegularMonthly.aspx" />
+    <Content Include="Forecast\ForecastInquiryMonthly.aspx" />
+    <Content Include="Forecast\ForecastRegular.aspx" />
+    <Content Include="Forecast\ForecastReport.aspx" />
+    <Content Include="Forecast\HistoricalMonthlyForecast.aspx" />
+    <Content Include="Forecast\SummaryForecast.aspx" />
+    <Content Include="Forecast\ForecastInquiryDaily.aspx" />
+    <Content Include="Images\ASPxRoundPanel\461580935\BottomLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\BottomRightCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\HeaderContent.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\HeaderLeftEdge.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\HeaderRightEdge.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\NoHeaderTopLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\NoHeaderTopRightCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\TopLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\461580935\TopRightCorner.png" />
+    <Content Include="Images\fuchsia.jpg" />
+    <Content Include="Images\LoginBackgroundNew.jpg" />
+    <Content Include="Images\LoginBackgroundNew2.JPG" />
+    <Content Include="Images\Logo.gif" />
+    <Content Include="Images\Logo.JPG" />
+    <Content Include="Images\Logo2.JPG" />
+    <Content Include="Images\Logofix.JPG" />
+    <Content Include="InvoiceExport\AffReceivingConfExport.aspx" />
+    <Content Include="InvoiceExport\InvFromPASIDetailExport.aspx" />
+    <Content Include="InvoiceExport\InvFromPASIListExport.aspx" />
+    <Content Include="InvoiceExport\InvFromSuppListExport.aspx" />
+    <Content Include="InvoiceExport\InvoiceEntryExport.aspx" />
+    <Content Include="InvoiceExport\InvToAffExport.aspx" />
+    <Content Include="InvoiceExport\SummaryInvoiceAffiliateExp.aspx" />
+    <Content Include="InvoiceExport\SummaryInvoiceSupplierExp.aspx" />
+    <Content Include="Invoice\AffReceivingConf.aspx" />
+    <Content Include="Invoice\FinalInvoice.aspx" />
+    <Content Include="Invoice\FinalInvoiceCreateDetail.aspx" />
+    <Content Include="Invoice\FinalInvoiceViewReport.aspx" />
+    <Content Include="Invoice\InvFromSuppList.aspx" />
+    <Content Include="Invoice\InvoiceEntry.aspx" />
+    <Content Include="Invoice\InvToAff.aspx" />
+    <Content Include="Invoice\SummaryInvoiceSupplier.aspx" />
+    <Content Include="Invoice\SummaryInvoiceAffiliate.aspx" />
+    <Content Include="Invoice\viewInvToAff.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MainMenu.aspx" />
+    <Content Include="Master\AffiliateEmailMaster.aspx" />
+    <Content Include="Master\AffiliateMaster.aspx" />
+    <Content Include="Master\AffiliateMasterDetail.aspx" />
+    <Content Include="Master\MasterHistory.aspx" />
+    <Content Include="Master\DeliveryLocationMaster.aspx" />
+    <Content Include="Master\EmailSetting.aspx" />
+    <Content Include="Master\ETDExport.aspx" />
+    <Content Include="Master\ETDPASIMaster.aspx" />
+    <Content Include="Master\ETDSupplierDirectMaster.aspx" />
+    <Content Include="Master\ETDSupplierMaster.aspx" />
+    <Content Include="Master\Forwarder.aspx" />
+    <Content Include="Master\ForwarderEmailMaster.aspx" />
+    <Content Include="Master\ForwarderMapping.aspx" />
+    <Content Include="Master\PerformanceClsMaster.aspx" />
+    <Content Include="Master\SupplierGroupMaster.aspx" />
+    <Content Include="Master\PartConversion.aspx" />
+    <Content Include="Master\PartMapping.aspx" />
+    <Content Include="Master\PartMasterDetail.aspx" />
+    <Content Include="Master\PartMaster.aspx" />
+    <Content Include="Master\PASIEmailMaster.aspx" />
+    <Content Include="Master\PASIPriceMaster.aspx" />
+    <Content Include="Master\SupplierCapacity.aspx" />
+    <Content Include="Master\SupplierEmailMaster.aspx" />
+    <Content Include="Master\SupplierMasterDetail.aspx" />
+    <Content Include="Master\SupplierMaster.aspx" />
+    <Content Include="Master\NotificationMaster.aspx" />
+    <Content Include="Master\SupplierPriceMaster.aspx" />
+    <Content Include="PackingListExport\PackingListExportEntry.aspx" />
+    <Content Include="PackingListExport\PackingListViewReportExport.aspx" />
+    <Content Include="PackingList\PackingListCreate.aspx" />
+    <Content Include="PackingList\PackingListCreateDetail.aspx" />
+    <Content Include="PackingList\PackingListViewReport.aspx" />
+    <Content Include="PDPLB\PDPLBDomestic.aspx" />
+    <Content Include="PDPLB\PDPLBExport.aspx" />
+    <Content Include="PORevisionExport\PORevisionExportAppDetail.aspx" />
+    <Content Include="PORevisionExport\PORevisionExportAppList.aspx" />
+    <Content Include="PORevisionExport\PORevisionExportEmergency.aspx" />
+    <Content Include="PORevisionExport\PORevisionExportList.aspx" />
+    <Content Include="PORevisionExport\PORevisionExportMonthly.aspx" />
+    <Content Include="ProgressReportExport\RemainingPOExport.aspx" />
+    <Content Include="ProgressReport\SummaryOutstandingDanDeliveryPasiToAffExp.aspx" />
+    <Content Include="ProgressReport\SummaryOutstandingDanDeliverySupplierExp.aspx" />
+    <Content Include="ProgressReport\SummaryOutstandingDanDeliveryPasiToAff.aspx" />
+    <Content Include="ProgressReport\SummaryOutstandingDanDeliverySupplier.aspx" />
+    <Content Include="ProgressReport\ExportOrderHistory.aspx" />
+    <Content Include="ProgressReport\RemainingPOExport.aspx" />
+    <Content Include="ProgressReport\SummaryOutstanding.aspx" />
+    <Content Include="PurchaseOrderExport\FinalApprovalDetail.aspx" />
+    <Content Include="PurchaseOrderExport\POExportEntryCancelDetail.aspx" />
+    <Content Include="PurchaseOrderExport\POExportListCancel.aspx" />
+    <Content Include="PurchaseOrderExport\POExportEntryCancel.aspx" />
+    <Content Include="PurchaseOrderExport\POExportEntrySplit.aspx" />
+    <Content Include="PurchaseOrderExport\PrintForecast.aspx" />
+    <Content Include="PurchaseOrderExport\PrintLabelExportList.aspx" />
+    <Content Include="PurchaseOrderExport\LabelViewReport.aspx" />
+    <Content Include="PurchaseOrderExport\POExportEntryEmergency.aspx" />
+    <Content Include="PurchaseOrderExport\POExportEntryMonthly.aspx" />
+    <Content Include="PurchaseOrderExport\POExportFinalApprovalEmergency.aspx" />
+    <Content Include="PurchaseOrderExport\POExportFinalApprovalList.aspx" />
+    <Content Include="PurchaseOrderExport\POExportFinalApprovalMonthly.aspx" />
+    <Content Include="PurchaseOrderExport\POExportList.aspx" />
+    <Content Include="PurchaseOrderExport\POUploadExport.aspx" />
+    <Content Include="PurchaseOrderExport\PrintPreBookingList.aspx" />
+    <Content Include="Receiving\GoodReceivingReport.aspx" />
+    <Content Include="Receiving\ReceivingEntry.aspx" />
+    <Content Include="Receiving\SuppDeliveryConf.aspx" />
+    <Content Include="Scripts\jsConfirmation.js" />
+    <Content Include="Scripts\jsInputValidation.js" />
+    <Content Include="SecuritySystem\ChangePassword.aspx" />
+    <Content Include="SecuritySystem\UserSetup.aspx" />
+    <Content Include="ShippingInstruction\ShippingInstructionToForwarder.aspx" />
+    <Content Include="ShippingInstruction\ShippingViewReportExport.aspx" />
+    <Content Include="ShippingInstruction\ShippingViewReportExportCR.aspx" />
+    <Content Include="Styles\Images\yazakiIcon.ico" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Style\Appearance.css" />
+    <Content Include="Style\button.css" />
+    <Content Include="Upload\UploadETDExport.aspx" />
+    <Content Include="Upload\UploadSupplierPrice.aspx" />
+    <Content Include="Upload\UploadPASIPrice.aspx" />
+    <Content Include="Upload\UploadSuppCapacity.aspx" />
+    <Content Include="Upload\UploadDeliveryLocation.aspx" />
+    <Content Include="Upload\UploadPartMapping.aspx" />
+    <Content Include="Upload\UploadPart.aspx" />
+    <Content Include="Upload\UploadSupplier.aspx" />
+    <Content Include="Upload\UploadAffiliate.aspx" />
+    <Content Include="Upload\UploadETDDirect.aspx" />
+    <Content Include="Upload\UploadETDViaPASI.aspx" />
+    <Content Include="Upload\UploadETDPASI.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportAppDetail.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderExportAppDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportAppDetail.aspx.vb">
+      <DependentUpon>AffiliateOrderExportAppDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportAppList.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderExportAppList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportAppList.aspx.vb">
+      <DependentUpon>AffiliateOrderExportAppList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportDetail.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderExportDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportDetail.aspx.vb">
+      <DependentUpon>AffiliateOrderExportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportList.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderExportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrderExport\AffiliateOrderExportList.aspx.vb">
+      <DependentUpon>AffiliateOrderExportList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderAppDetail.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderAppDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderAppDetail.aspx.vb">
+      <DependentUpon>AffiliateOrderAppDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderAppList.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderAppList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderAppList.aspx.vb">
+      <DependentUpon>AffiliateOrderAppList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderDetail.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderDetail.aspx.vb">
+      <DependentUpon>AffiliateOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderList.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateOrder\AffiliateOrderList.aspx.vb">
+      <DependentUpon>AffiliateOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderevEntry.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderevEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderevEntry.aspx.vb">
+      <DependentUpon>AffiliateOrderevEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderRevAppDetail.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderRevAppDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderRevAppDetail.aspx.vb">
+      <DependentUpon>AffiliateOrderRevAppDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderRevAppList.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderRevAppList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderRevAppList.aspx.vb">
+      <DependentUpon>AffiliateOrderRevAppList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderRevList.aspx.designer.vb">
+      <DependentUpon>AffiliateOrderRevList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateRevision\AffiliateOrderRevList.aspx.vb">
+      <DependentUpon>AffiliateOrderRevList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffiliateRevision\PORevHistory.aspx.designer.vb">
+      <DependentUpon>PORevHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliateRevision\PORevHistory.aspx.vb">
+      <DependentUpon>PORevHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffKanban\AffKanbanCreate.aspx.designer.vb">
+      <DependentUpon>AffKanbanCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffKanban\AffKanbanCreate.aspx.vb">
+      <DependentUpon>AffKanbanCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffKanban\AffKanbanList.aspx.designer.vb">
+      <DependentUpon>AffKanbanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffKanban\AffKanbanList.aspx.vb">
+      <DependentUpon>AffKanbanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AffKanban\KanbanCard.Designer.vb">
+      <DependentUpon>KanbanCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffKanban\KanbanCard.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AffKanban\KanbanCard2.Designer.vb">
+      <DependentUpon>KanbanCard2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffKanban\KanbanCard2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AffKanban\RptKanbanCycle.Designer.vb">
+      <DependentUpon>RptKanbanCycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AffKanban\RptKanbanCycle.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AffKanban\ViewReport.aspx.designer.vb">
+      <DependentUpon>ViewReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffKanban\ViewReport.aspx.vb">
+      <DependentUpon>ViewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Andon\Domestic.aspx.designer.vb">
+      <DependentUpon>Domestic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Andon\Domestic.aspx.vb">
+      <DependentUpon>Domestic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Andon\Export.aspx.designer.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Andon\Export.aspx.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Class\clsAppearance.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\clsDeliveryExportDetail.vb" />
+    <Compile Include="Class\clsDeliveryExportHeader.vb" />
+    <Compile Include="Class\clsDESEncryption.vb" />
+    <Compile Include="Class\clsGlobal.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\clsMaster.vb" />
+    <Compile Include="Class\clsMerge.vb" />
+    <Compile Include="Class\clsMessage.vb" />
+    <Compile Include="Class\clsNotification.vb" />
+    <Compile Include="Class\clsPO.vb" />
+    <Compile Include="Class\clsPOExportDetail.vb" />
+    <Compile Include="Class\clsPOExportEmergency.vb" />
+    <Compile Include="Class\clsPOExportHeader.vb" />
+    <Compile Include="Class\clsPOExportMonthly.vb" />
+    <Compile Include="DeliveryExport\DeliveryExportForm.aspx.designer.vb">
+      <DependentUpon>DeliveryExportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryExportForm.aspx.vb">
+      <DependentUpon>DeliveryExportForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\rptDeliveryToFor.Designer.vb">
+      <DependentUpon>rptDeliveryToFor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\rptDeliveryToFor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\viewDeliveryToFor.aspx.designer.vb">
+      <DependentUpon>viewDeliveryToFor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\viewDeliveryToFor.aspx.vb">
+      <DependentUpon>viewDeliveryToFor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryToForEntry.aspx.designer.vb">
+      <DependentUpon>DeliveryToForEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryToForEntry.aspx.vb">
+      <DependentUpon>DeliveryToForEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryToForList.aspx.designer.vb">
+      <DependentUpon>DeliveryToForList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryToForList.aspx.vb">
+      <DependentUpon>DeliveryToForList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\TallyDataForm.aspx.designer.vb">
+      <DependentUpon>TallyDataForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\TallyDataForm.aspx.vb">
+      <DependentUpon>TallyDataForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryExportUpload.aspx.designer.vb">
+      <DependentUpon>DeliveryExportUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryExportUpload.aspx.vb">
+      <DependentUpon>DeliveryExportUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryToAffListExport.aspx.designer.vb">
+      <DependentUpon>DeliveryToAffListExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\DeliveryToAffListExport.aspx.vb">
+      <DependentUpon>DeliveryToAffListExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\GoodReceivingReportExport.aspx.designer.vb">
+      <DependentUpon>GoodReceivingReportExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\GoodReceivingReportExport.aspx.vb">
+      <DependentUpon>GoodReceivingReportExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\Palletizing.aspx.designer.vb">
+      <DependentUpon>Palletizing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\Palletizing.aspx.vb">
+      <DependentUpon>Palletizing.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\ReceivingEntryExport.aspx.designer.vb">
+      <DependentUpon>ReceivingEntryExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\ReceivingEntryExport.aspx.vb">
+      <DependentUpon>ReceivingEntryExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryExport\rptGoodReceivingReportExport.designer.vb">
+      <DependentUpon>rptGoodReceivingReportExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryExport\rptGoodReceivingReportExport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Delivery\DeliveryPerformReport.aspx.designer.vb">
+      <DependentUpon>DeliveryPerformReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\DeliveryPerformReport.aspx.vb">
+      <DependentUpon>DeliveryPerformReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\DeliveryToAffEntry.aspx.designer.vb">
+      <DependentUpon>DeliveryToAffEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\DeliveryToAffEntry.aspx.vb">
+      <DependentUpon>DeliveryToAffEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\DeliveryToAffList.aspx.designer.vb">
+      <DependentUpon>DeliveryToAffList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\DeliveryToAffList.aspx.vb">
+      <DependentUpon>DeliveryToAffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\rptDeliveryToAff.Designer.vb">
+      <DependentUpon>rptDeliveryToAff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\rptDeliveryToAff.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Delivery\viewDeliveryToAff.aspx.designer.vb">
+      <DependentUpon>viewDeliveryToAff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\viewDeliveryToAff.aspx.vb">
+      <DependentUpon>viewDeliveryToAff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailMonitoring\EmailMonitoring.aspx.designer.vb">
+      <DependentUpon>EmailMonitoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailMonitoring\EmailMonitoring.aspx.vb">
+      <DependentUpon>EmailMonitoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\ForecastRegularMonthly.aspx.designer.vb">
+      <DependentUpon>ForecastRegularMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\ForecastRegularMonthly.aspx.vb">
+      <DependentUpon>ForecastRegularMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\ForecastInquiryMonthly.aspx.designer.vb">
+      <DependentUpon>ForecastInquiryMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\ForecastInquiryMonthly.aspx.vb">
+      <DependentUpon>ForecastInquiryMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\ForecastRegular.aspx.designer.vb">
+      <DependentUpon>ForecastRegular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\ForecastRegular.aspx.vb">
+      <DependentUpon>ForecastRegular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\ForecastReport.aspx.designer.vb">
+      <DependentUpon>ForecastReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\ForecastReport.aspx.vb">
+      <DependentUpon>ForecastReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\HistoricalMonthlyForecast.aspx.designer.vb">
+      <DependentUpon>HistoricalMonthlyForecast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\HistoricalMonthlyForecast.aspx.vb">
+      <DependentUpon>HistoricalMonthlyForecast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\SummaryForecast.aspx.designer.vb">
+      <DependentUpon>SummaryForecast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\SummaryForecast.aspx.vb">
+      <DependentUpon>SummaryForecast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forecast\ForecastInquiryDaily.aspx.designer.vb">
+      <DependentUpon>ForecastInquiryDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast\ForecastInquiryDaily.aspx.vb">
+      <DependentUpon>ForecastInquiryDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\AffReceivingConfExport.aspx.designer.vb">
+      <DependentUpon>AffReceivingConfExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\AffReceivingConfExport.aspx.vb">
+      <DependentUpon>AffReceivingConfExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\InvFromPASIDetailExport.aspx.designer.vb">
+      <DependentUpon>InvFromPASIDetailExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\InvFromPASIDetailExport.aspx.vb">
+      <DependentUpon>InvFromPASIDetailExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\InvFromPASIListExport.aspx.designer.vb">
+      <DependentUpon>InvFromPASIListExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\InvFromPASIListExport.aspx.vb">
+      <DependentUpon>InvFromPASIListExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\InvFromSuppListExport.aspx.designer.vb">
+      <DependentUpon>InvFromSuppListExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\InvFromSuppListExport.aspx.vb">
+      <DependentUpon>InvFromSuppListExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\InvoiceEntryExport.aspx.designer.vb">
+      <DependentUpon>InvoiceEntryExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\InvoiceEntryExport.aspx.vb">
+      <DependentUpon>InvoiceEntryExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\InvToAffExport.aspx.designer.vb">
+      <DependentUpon>InvToAffExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\InvToAffExport.aspx.vb">
+      <DependentUpon>InvToAffExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\SummaryInvoiceAffiliateExp.aspx.designer.vb">
+      <DependentUpon>SummaryInvoiceAffiliateExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\SummaryInvoiceAffiliateExp.aspx.vb">
+      <DependentUpon>SummaryInvoiceAffiliateExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceExport\SummaryInvoiceSupplierExp.aspx.designer.vb">
+      <DependentUpon>SummaryInvoiceSupplierExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceExport\SummaryInvoiceSupplierExp.aspx.vb">
+      <DependentUpon>SummaryInvoiceSupplierExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\AffReceivingConf.aspx.designer.vb">
+      <DependentUpon>AffReceivingConf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\AffReceivingConf.aspx.vb">
+      <DependentUpon>AffReceivingConf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\FinalInvoice.aspx.designer.vb">
+      <DependentUpon>FinalInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\FinalInvoice.aspx.vb">
+      <DependentUpon>FinalInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\FinalInvoiceCreateDetail.aspx.designer.vb">
+      <DependentUpon>FinalInvoiceCreateDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\FinalInvoiceCreateDetail.aspx.vb">
+      <DependentUpon>FinalInvoiceCreateDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\FinalInvoiceViewReport.aspx.designer.vb">
+      <DependentUpon>FinalInvoiceViewReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\FinalInvoiceViewReport.aspx.vb">
+      <DependentUpon>FinalInvoiceViewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvFromSuppList.aspx.designer.vb">
+      <DependentUpon>InvFromSuppList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvFromSuppList.aspx.vb">
+      <DependentUpon>InvFromSuppList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceEntry.aspx.designer.vb">
+      <DependentUpon>InvoiceEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceEntry.aspx.vb">
+      <DependentUpon>InvoiceEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvToAff.aspx.designer.vb">
+      <DependentUpon>InvToAff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvToAff.aspx.vb">
+      <DependentUpon>InvToAff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\RptFinalInvoice.designer.vb">
+      <DependentUpon>RptFinalInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\RptFinalInvoice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Invoice\rptInfoiceToAffiliate.Designer.vb">
+      <DependentUpon>rptInfoiceToAffiliate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\rptInfoiceToAffiliate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Invoice\SummaryInvoiceSupplier.aspx.designer.vb">
+      <DependentUpon>SummaryInvoiceSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\SummaryInvoiceSupplier.aspx.vb">
+      <DependentUpon>SummaryInvoiceSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\SummaryInvoiceAffiliate.aspx.designer.vb">
+      <DependentUpon>SummaryInvoiceAffiliate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\SummaryInvoiceAffiliate.aspx.vb">
+      <DependentUpon>SummaryInvoiceAffiliate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\viewInvToAff.aspx.designer.vb">
+      <DependentUpon>viewInvToAff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\viewInvToAff.aspx.vb">
+      <DependentUpon>viewInvToAff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMenu.aspx.designer.vb">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.aspx.vb">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AffiliateEmailMaster.aspx.designer.vb">
+      <DependentUpon>AffiliateEmailMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AffiliateEmailMaster.aspx.vb">
+      <DependentUpon>AffiliateEmailMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AffiliateMaster.aspx.designer.vb">
+      <DependentUpon>AffiliateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AffiliateMaster.aspx.vb">
+      <DependentUpon>AffiliateMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AffiliateMasterDetail.aspx.designer.vb">
+      <DependentUpon>AffiliateMasterDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AffiliateMasterDetail.aspx.vb">
+      <DependentUpon>AffiliateMasterDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterHistory.aspx.designer.vb">
+      <DependentUpon>MasterHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterHistory.aspx.vb">
+      <DependentUpon>MasterHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\DeliveryLocationMaster.aspx.designer.vb">
+      <DependentUpon>DeliveryLocationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DeliveryLocationMaster.aspx.vb">
+      <DependentUpon>DeliveryLocationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\EmailSetting.aspx.designer.vb">
+      <DependentUpon>EmailSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\EmailSetting.aspx.vb">
+      <DependentUpon>EmailSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ETDExport.aspx.designer.vb">
+      <DependentUpon>ETDExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ETDExport.aspx.vb">
+      <DependentUpon>ETDExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ETDPASIMaster.aspx.designer.vb">
+      <DependentUpon>ETDPASIMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ETDPASIMaster.aspx.vb">
+      <DependentUpon>ETDPASIMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ETDSupplierDirectMaster.aspx.designer.vb">
+      <DependentUpon>ETDSupplierDirectMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ETDSupplierDirectMaster.aspx.vb">
+      <DependentUpon>ETDSupplierDirectMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ETDSupplierMaster.aspx.designer.vb">
+      <DependentUpon>ETDSupplierMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ETDSupplierMaster.aspx.vb">
+      <DependentUpon>ETDSupplierMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Forwarder.aspx.designer.vb">
+      <DependentUpon>Forwarder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Forwarder.aspx.vb">
+      <DependentUpon>Forwarder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ForwarderEmailMaster.aspx.designer.vb">
+      <DependentUpon>ForwarderEmailMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ForwarderEmailMaster.aspx.vb">
+      <DependentUpon>ForwarderEmailMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ForwarderMapping.aspx.designer.vb">
+      <DependentUpon>ForwarderMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ForwarderMapping.aspx.vb">
+      <DependentUpon>ForwarderMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PerformanceClsMaster.aspx.designer.vb">
+      <DependentUpon>PerformanceClsMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PerformanceClsMaster.aspx.vb">
+      <DependentUpon>PerformanceClsMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierGroupMaster.aspx.designer.vb">
+      <DependentUpon>SupplierGroupMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierGroupMaster.aspx.vb">
+      <DependentUpon>SupplierGroupMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PartConversion.aspx.designer.vb">
+      <DependentUpon>PartConversion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PartConversion.aspx.vb">
+      <DependentUpon>PartConversion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PartMapping.aspx.designer.vb">
+      <DependentUpon>PartMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PartMapping.aspx.vb">
+      <DependentUpon>PartMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PartMasterDetail.aspx.designer.vb">
+      <DependentUpon>PartMasterDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PartMasterDetail.aspx.vb">
+      <DependentUpon>PartMasterDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PartMaster.aspx.designer.vb">
+      <DependentUpon>PartMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PartMaster.aspx.vb">
+      <DependentUpon>PartMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PASIEmailMaster.aspx.designer.vb">
+      <DependentUpon>PASIEmailMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PASIEmailMaster.aspx.vb">
+      <DependentUpon>PASIEmailMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PASIPriceMaster.aspx.designer.vb">
+      <DependentUpon>PASIPriceMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PASIPriceMaster.aspx.vb">
+      <DependentUpon>PASIPriceMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierCapacity.aspx.designer.vb">
+      <DependentUpon>SupplierCapacity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierCapacity.aspx.vb">
+      <DependentUpon>SupplierCapacity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierEmailMaster.aspx.designer.vb">
+      <DependentUpon>SupplierEmailMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierEmailMaster.aspx.vb">
+      <DependentUpon>SupplierEmailMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierMasterDetail.aspx.designer.vb">
+      <DependentUpon>SupplierMasterDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierMasterDetail.aspx.vb">
+      <DependentUpon>SupplierMasterDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierMaster.aspx.designer.vb">
+      <DependentUpon>SupplierMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierMaster.aspx.vb">
+      <DependentUpon>SupplierMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\NotificationMaster.aspx.designer.vb">
+      <DependentUpon>NotificationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\NotificationMaster.aspx.vb">
+      <DependentUpon>NotificationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierPriceMaster.aspx.designer.vb">
+      <DependentUpon>SupplierPriceMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierPriceMaster.aspx.vb">
+      <DependentUpon>SupplierPriceMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PackingListExport\PackingListExportEntry.aspx.designer.vb">
+      <DependentUpon>PackingListExportEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PackingListExport\PackingListExportEntry.aspx.vb">
+      <DependentUpon>PackingListExportEntry.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PackingListExport\PackingListViewReportExport.aspx.designer.vb">
+      <DependentUpon>PackingListViewReportExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PackingListExport\PackingListViewReportExport.aspx.vb">
+      <DependentUpon>PackingListViewReportExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PackingListExport\RptPackingListExport.Designer.vb">
+      <DependentUpon>RptPackingListExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PackingListExport\RptPackingListExport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PackingListExport\RptPackingListExportDetail.Designer.vb">
+      <DependentUpon>RptPackingListExportDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PackingListExport\RptPackingListExportDetail.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PackingList\PackingListCreate.aspx.designer.vb">
+      <DependentUpon>PackingListCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\PackingListCreate.aspx.vb">
+      <DependentUpon>PackingListCreate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PackingList\PackingListCreateDetail.aspx.designer.vb">
+      <DependentUpon>PackingListCreateDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\PackingListCreateDetail.aspx.vb">
+      <DependentUpon>PackingListCreateDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PackingList\PackingListViewReport.aspx.designer.vb">
+      <DependentUpon>PackingListViewReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\PackingListViewReport.aspx.vb">
+      <DependentUpon>PackingListViewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PackingList\RptPackingList.Designer.vb">
+      <DependentUpon>RptPackingList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\RptPackingList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PDPLB\PDPLBDomestic.aspx.designer.vb">
+      <DependentUpon>PDPLBDomestic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDPLB\PDPLBDomestic.aspx.vb">
+      <DependentUpon>PDPLBDomestic.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PDPLB\PDPLBExport.aspx.designer.vb">
+      <DependentUpon>PDPLBExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDPLB\PDPLBExport.aspx.vb">
+      <DependentUpon>PDPLBExport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportAppDetail.aspx.designer.vb">
+      <DependentUpon>PORevisionExportAppDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportAppDetail.aspx.vb">
+      <DependentUpon>PORevisionExportAppDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportAppList.aspx.designer.vb">
+      <DependentUpon>PORevisionExportAppList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportAppList.aspx.vb">
+      <DependentUpon>PORevisionExportAppList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportEmergency.aspx.designer.vb">
+      <DependentUpon>PORevisionExportEmergency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportEmergency.aspx.vb">
+      <DependentUpon>PORevisionExportEmergency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportList.aspx.designer.vb">
+      <DependentUpon>PORevisionExportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportList.aspx.vb">
+      <DependentUpon>PORevisionExportList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportMonthly.aspx.designer.vb">
+      <DependentUpon>PORevisionExportMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PORevisionExport\PORevisionExportMonthly.aspx.vb">
+      <DependentUpon>PORevisionExportMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReportExport\RemainingPOExport.aspx.designer.vb">
+      <DependentUpon>RemainingPOExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReportExport\RemainingPOExport.aspx.vb">
+      <DependentUpon>RemainingPOExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliveryPasiToAffExp.aspx.designer.vb">
+      <DependentUpon>SummaryOutstandingDanDeliveryPasiToAffExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliveryPasiToAffExp.aspx.vb">
+      <DependentUpon>SummaryOutstandingDanDeliveryPasiToAffExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliverySupplierExp.aspx.designer.vb">
+      <DependentUpon>SummaryOutstandingDanDeliverySupplierExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliverySupplierExp.aspx.vb">
+      <DependentUpon>SummaryOutstandingDanDeliverySupplierExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliveryPasiToAff.aspx.designer.vb">
+      <DependentUpon>SummaryOutstandingDanDeliveryPasiToAff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliveryPasiToAff.aspx.vb">
+      <DependentUpon>SummaryOutstandingDanDeliveryPasiToAff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliverySupplier.aspx.designer.vb">
+      <DependentUpon>SummaryOutstandingDanDeliverySupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstandingDanDeliverySupplier.aspx.vb">
+      <DependentUpon>SummaryOutstandingDanDeliverySupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\ExportOrderHistory.aspx.designer.vb">
+      <DependentUpon>ExportOrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\ExportOrderHistory.aspx.vb">
+      <DependentUpon>ExportOrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\RemainingPOExport.aspx.designer.vb">
+      <DependentUpon>RemainingPOExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\RemainingPOExport.aspx.vb">
+      <DependentUpon>RemainingPOExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstanding.aspx.designer.vb">
+      <DependentUpon>SummaryOutstanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\SummaryOutstanding.aspx.vb">
+      <DependentUpon>SummaryOutstanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\FinalApprovalDetail.aspx.designer.vb">
+      <DependentUpon>FinalApprovalDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\FinalApprovalDetail.aspx.vb">
+      <DependentUpon>FinalApprovalDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\LabelExport.Designer.vb">
+      <DependentUpon>LabelExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\LabelExport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryCancelDetail.aspx.designer.vb">
+      <DependentUpon>POExportEntryCancelDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryCancelDetail.aspx.vb">
+      <DependentUpon>POExportEntryCancelDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportListCancel.aspx.designer.vb">
+      <DependentUpon>POExportListCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportListCancel.aspx.vb">
+      <DependentUpon>POExportListCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryCancel.aspx.designer.vb">
+      <DependentUpon>POExportEntryCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryCancel.aspx.vb">
+      <DependentUpon>POExportEntryCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntrySplit.aspx.designer.vb">
+      <DependentUpon>POExportEntrySplit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntrySplit.aspx.vb">
+      <DependentUpon>POExportEntrySplit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\PrintForecast.aspx.designer.vb">
+      <DependentUpon>PrintForecast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\PrintForecast.aspx.vb">
+      <DependentUpon>PrintForecast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\PrintLabelExportList.aspx.designer.vb">
+      <DependentUpon>PrintLabelExportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\PrintLabelExportList.aspx.vb">
+      <DependentUpon>PrintLabelExportList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\LabelViewReport.aspx.designer.vb">
+      <DependentUpon>LabelViewReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\LabelViewReport.aspx.vb">
+      <DependentUpon>LabelViewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryEmergency.aspx.designer.vb">
+      <DependentUpon>POExportEntryEmergency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryEmergency.aspx.vb">
+      <DependentUpon>POExportEntryEmergency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryMonthly.aspx.designer.vb">
+      <DependentUpon>POExportEntryMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportEntryMonthly.aspx.vb">
+      <DependentUpon>POExportEntryMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportFinalApprovalEmergency.aspx.designer.vb">
+      <DependentUpon>POExportFinalApprovalEmergency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportFinalApprovalEmergency.aspx.vb">
+      <DependentUpon>POExportFinalApprovalEmergency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportFinalApprovalList.aspx.designer.vb">
+      <DependentUpon>POExportFinalApprovalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportFinalApprovalList.aspx.vb">
+      <DependentUpon>POExportFinalApprovalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportFinalApprovalMonthly.aspx.designer.vb">
+      <DependentUpon>POExportFinalApprovalMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportFinalApprovalMonthly.aspx.vb">
+      <DependentUpon>POExportFinalApprovalMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportList.aspx.designer.vb">
+      <DependentUpon>POExportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POExportList.aspx.vb">
+      <DependentUpon>POExportList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POUploadExport.aspx.designer.vb">
+      <DependentUpon>POUploadExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\POUploadExport.aspx.vb">
+      <DependentUpon>POUploadExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\PrintPreBookingList.aspx.designer.vb">
+      <DependentUpon>PrintPreBookingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderExport\PrintPreBookingList.aspx.vb">
+      <DependentUpon>PrintPreBookingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receiving\GoodReceivingReport.aspx.designer.vb">
+      <DependentUpon>GoodReceivingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\GoodReceivingReport.aspx.vb">
+      <DependentUpon>GoodReceivingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receiving\ReceivingEntry.aspx.designer.vb">
+      <DependentUpon>ReceivingEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\ReceivingEntry.aspx.vb">
+      <DependentUpon>ReceivingEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receiving\rptGoodReceivingNew.Designer.vb">
+      <DependentUpon>rptGoodReceivingNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\rptGoodReceivingNew.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receiving\rptGoodReceivingReport.designer.vb">
+      <DependentUpon>rptGoodReceivingReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\rptGoodReceivingReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Receiving\SuppDeliveryConf.aspx.designer.vb">
+      <DependentUpon>SuppDeliveryConf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\SuppDeliveryConf.aspx.vb">
+      <DependentUpon>SuppDeliveryConf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptShippingInstruction.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptShippingInstruction.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SecuritySystem\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecuritySystem\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecuritySystem\UserSetup.aspx.designer.vb">
+      <DependentUpon>UserSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecuritySystem\UserSetup.aspx.vb">
+      <DependentUpon>UserSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ShippingInstruction\RptInvoice.Designer.vb">
+      <DependentUpon>RptInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInstruction\RptInvoice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShippingInstruction\RptShipping.Designer.vb">
+      <DependentUpon>RptShipping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInstruction\RptShipping.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShippingInstruction\RptTally.Designer.vb">
+      <DependentUpon>RptTally.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInstruction\RptTally.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShippingInstruction\ShippingInstructionToForwarder.aspx.designer.vb">
+      <DependentUpon>ShippingInstructionToForwarder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInstruction\ShippingInstructionToForwarder.aspx.vb">
+      <DependentUpon>ShippingInstructionToForwarder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingInstruction\ShippingViewReportExport.aspx.designer.vb">
+      <DependentUpon>ShippingViewReportExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInstruction\ShippingViewReportExport.aspx.vb">
+      <DependentUpon>ShippingViewReportExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingInstruction\ShippingViewReportExportCR.aspx.designer.vb">
+      <DependentUpon>ShippingViewReportExportCR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInstruction\ShippingViewReportExportCR.aspx.vb">
+      <DependentUpon>ShippingViewReportExportCR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteContent.Master.designer.vb">
+      <DependentUpon>SiteContent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteContent.Master.vb">
+      <DependentUpon>SiteContent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMenu.Master.designer.vb">
+      <DependentUpon>SiteMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMenu.Master.vb">
+      <DependentUpon>SiteMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TallyData.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TallyData.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Upload\UploadETDExport.aspx.designer.vb">
+      <DependentUpon>UploadETDExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadETDExport.aspx.vb">
+      <DependentUpon>UploadETDExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadSupplierPrice.aspx.designer.vb">
+      <DependentUpon>UploadSupplierPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadSupplierPrice.aspx.vb">
+      <DependentUpon>UploadSupplierPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadPASIPrice.aspx.designer.vb">
+      <DependentUpon>UploadPASIPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadPASIPrice.aspx.vb">
+      <DependentUpon>UploadPASIPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadSuppCapacity.aspx.designer.vb">
+      <DependentUpon>UploadSuppCapacity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadSuppCapacity.aspx.vb">
+      <DependentUpon>UploadSuppCapacity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadDeliveryLocation.aspx.designer.vb">
+      <DependentUpon>UploadDeliveryLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadDeliveryLocation.aspx.vb">
+      <DependentUpon>UploadDeliveryLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadPartMapping.aspx.designer.vb">
+      <DependentUpon>UploadPartMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadPartMapping.aspx.vb">
+      <DependentUpon>UploadPartMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadPart.aspx.designer.vb">
+      <DependentUpon>UploadPart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadPart.aspx.vb">
+      <DependentUpon>UploadPart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadSupplier.aspx.designer.vb">
+      <DependentUpon>UploadSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadSupplier.aspx.vb">
+      <DependentUpon>UploadSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadAffiliate.aspx.designer.vb">
+      <DependentUpon>UploadAffiliate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadAffiliate.aspx.vb">
+      <DependentUpon>UploadAffiliate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadETDDirect.aspx.designer.vb">
+      <DependentUpon>UploadETDDirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadETDDirect.aspx.vb">
+      <DependentUpon>UploadETDDirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadETDViaPASI.aspx.designer.vb">
+      <DependentUpon>UploadETDViaPASI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadETDViaPASI.aspx.vb">
+      <DependentUpon>UploadETDViaPASI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadETDPASI.aspx.designer.vb">
+      <DependentUpon>UploadETDPASI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadETDPASI.aspx.vb">
+      <DependentUpon>UploadETDPASI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AffKanban\KanbanCard.resx">
+      <DependentUpon>KanbanCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffKanban\KanbanCard2.resx">
+      <DependentUpon>KanbanCard2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffKanban\RptKanbanCycle.resx">
+      <DependentUpon>RptKanbanCycle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryExport\rptDeliveryToFor.resx">
+      <DependentUpon>rptDeliveryToFor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryExport\rptGoodReceivingReportExport.resx">
+      <DependentUpon>rptGoodReceivingReportExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\rptDeliveryToAff.resx">
+      <DependentUpon>rptDeliveryToAff.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\RptFinalInvoice.resx">
+      <DependentUpon>RptFinalInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\rptInfoiceToAffiliate.resx">
+      <DependentUpon>rptInfoiceToAffiliate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingListExport\RptPackingListExport.resx">
+      <DependentUpon>RptPackingListExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingListExport\RptPackingListExportDetail.resx">
+      <DependentUpon>RptPackingListExportDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingList\RptPackingList.resx">
+      <DependentUpon>RptPackingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrderExport\LabelExport.resx">
+      <DependentUpon>LabelExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\rptGoodReceivingNew.resx">
+      <DependentUpon>rptGoodReceivingNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\rptGoodReceivingReport.resx">
+      <DependentUpon>rptGoodReceivingReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Invoice1.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptShippingInstruction.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptShippingInstruction.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingInstruction\RptInvoice.resx">
+      <DependentUpon>RptInvoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingInstruction\RptShipping.resx">
+      <DependentUpon>RptShipping.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingInstruction\RptTally.resx">
+      <DependentUpon>RptTally.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TallyData.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TallyData.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeliveryExport\Import\DELIVERY ORDER %28FORWARDER RECEIVING TEMPLATE%29.xlsx" />
+    <None Include="DeliveryExport\Import\Template Receiving Export.xlsm" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\PASISystem.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="SiteContent.Master" />
+    <Content Include="SiteMenu.Master" />
+    <None Include="ProgressReport\TemplateExportOrderHistory.xlsx" />
+    <None Include="ProgressReport\TemplateRemainingPOExportReport.xlsx" />
+    <None Include="ShippingInstruction\TemplateShippingInstructionList.xlsx" />
+    <None Include="Template\TemplateETDExport.xlsx" />
+    <None Include="Template\TemplateMSAffiliate.xlsx" />
+    <None Include="Template\TemplateMSDeliveryLocation.xlsx" />
+    <None Include="Template\TemplateMSETDPASI.xlsx" />
+    <None Include="Template\TemplateMSETDSupplierDirect.xlsx" />
+    <None Include="Template\TemplateMSETDSupplierViaPASI.xlsx" />
+    <None Include="Template\TemplateMSPart.xlsx" />
+    <None Include="Template\TemplateMSPartMapping.xlsx" />
+    <None Include="Template\TemplateMSPASIPrice.xlsx" />
+    <None Include="Template\TemplateMSSupCapacity.xlsx" />
+    <None Include="Template\TemplateMSSupplier.xlsx" />
+    <None Include="Template\TemplateMSSupplierPrice.xlsx" />
+    <None Include="Template\TemplateShippingInstructionList.xlsx" />
+    <None Include="Template\TemplateSummaryForecast.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forecast\Import\" />
+    <Folder Include="Invoice\Result\" />
+    <Folder Include="obj\" />
+    <Folder Include="ProgressReport\Import\" />
+    <Folder Include="PurchaseOrderExport\Import\" />
+    <Folder Include="Upload\Import\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59674</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

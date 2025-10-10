@@ -1,0 +1,12 @@
+2017/07/28 15:58:56 [PC NAME] PCTOS08-ADHI [Content] UPLOAD.MdlConn:ReadConnection [Line] 135
+Err Number : 5, Err Description : Cannot open database "PASI_EBWEB2" requested by the login. The login failed.
+Login failed for user 'sa'.
+
+2017/07/28 15:59:31 [PC NAME] PCTOS08-ADHI [Content] UPLOAD.MdlConn:ReadConnection [Line] 135
+Err Number : 5, Err Description : Cannot open database "PASI_EBWEB2" requested by the login. The login failed.
+Login failed for user 'sa'.
+
+2017/07/28 15:59:45 [PC NAME] PCTOS08-ADHI [Content] UPLOAD.MdlConn:ReadConnection [Line] 135
+Err Number : 5, Err Description : Cannot open database "PASI_EBWEB2" requested by the login. The login failed.
+Login failed for user 'sa'.
+

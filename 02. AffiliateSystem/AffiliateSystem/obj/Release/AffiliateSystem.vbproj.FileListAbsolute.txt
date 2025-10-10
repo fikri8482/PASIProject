@@ -1,0 +1,160 @@
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.vbprojResolveAssemblyReference.cache
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.RptPackingList.resources
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.KanbanCard.resources
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.KanbanCard2.resources
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.RptKanbanCycle.resources
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.Resources.resources
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.rptGoodReceivingReport.resources
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.vbproj.GenerateResource.Cache
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.dll.licenses
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\AffiliateSystem.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\AffiliateSystem.pdb
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\AffiliateSystem.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.ReportSource.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.Shared.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.Web.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Data.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.DataAccess.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Office.v14.1.Core.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Printing.v14.1.Core.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.RichEdit.v14.1.Core.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Utils.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Web.ASPxThemes.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Web.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraPrinting.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.Web.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Data.v14.1.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.DataAccess.v14.1.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Office.v14.1.Core.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Printing.v14.1.Core.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.RichEdit.v14.1.Core.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Utils.v14.1.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Web.v14.1.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraPrinting.v14.1.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.Web.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.dll
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.xml
+D:\TOS\PASI\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.pdb
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\AffiliateSystem.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\AffiliateSystem.pdb
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\AffiliateSystem.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.ReportSource.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.Shared.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\CrystalDecisions.Web.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Data.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.DataAccess.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Office.v14.1.Core.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Printing.v14.1.Core.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.RichEdit.v14.1.Core.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Utils.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Web.ASPxThemes.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Web.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraPrinting.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.Web.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Data.v14.1.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.DataAccess.v14.1.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Office.v14.1.Core.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Printing.v14.1.Core.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.RichEdit.v14.1.Core.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Utils.v14.1.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.Web.v14.1.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraPrinting.v14.1.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\DevExpress.XtraReports.v14.1.Web.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Data.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.DataAccess.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Printing.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Utils.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.Web.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.XtraReports.v14.1.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\de\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\es\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ja\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\bin\ru\DevExpress.XtraReports.v14.1.Web.resources.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.vbprojResolveAssemblyReference.cache
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.RptPackingList.resources
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.KanbanCard.resources
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.KanbanCard2.resources
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.RptKanbanCycle.resources
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.Resources.resources
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.rptGoodReceivingReport.resources
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.vbproj.GenerateResource.Cache
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.dll.licenses
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.dll
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.xml
+D:\TOS\PASI\01. Program\01. AffiliateSystem\AffiliateSystem\obj\Release\AffiliateSystem.pdb

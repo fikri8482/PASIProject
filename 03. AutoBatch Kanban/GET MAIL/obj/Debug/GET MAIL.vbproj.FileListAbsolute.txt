@@ -1,0 +1,57 @@
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.exe
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.pdb
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.dll
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.pdb
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.xml
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbprojResolveAssemblyReference.cache
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.frmGetMail.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.Resources.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.GenerateResource.Cache
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.exe
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.exe
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbprojResolveAssemblyReference.cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.frmGetMail.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.Resources.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.GenerateResource.Cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.exe
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbprojResolveAssemblyReference.cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.frmGetMail.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GET MAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbprojResolveAssemblyReference.cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.frmGetMail.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET_MAIL.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\GET MAIL\obj\Debug\GET MAIL.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\bin\Debug\GET MAIL.exe
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\bin\Debug\GET MAIL.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\bin\Debug\GlobalSetting.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\bin\Debug\GlobalSetting.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\bin\Debug\GlobalSetting.xml
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET MAIL.vbprojAssemblyReference.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET_MAIL.frmGetMail.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET_MAIL.Resources.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.GenerateResource.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.CoreCompileInputs.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET MAIL.vbproj.CopyComplete
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET MAIL.exe
+D:\PPS\maj VS pps\03. AutoBatch Kanban\GET MAIL\obj\Debug\GET MAIL.pdb

@@ -1,0 +1,10 @@
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\bin\Release\UPLOAD.exe
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\bin\Release\UPLOAD.pdb
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\bin\Release\UPLOAD.xml
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.frmUpload.resources
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.Resources.resources
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.vbproj.GenerateResource.Cache
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.exe.licenses
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.exe
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.xml
+D:\TOS\PASI\06. Upload Attachment\UPLOAD\obj\x86\Release\UPLOAD.pdb

@@ -1,0 +1,153 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteMenu.Master.vb" Inherits="PASISystem.Site2" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxTreeView" tagprefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PURCHASING SYSTEM - AFFILIATE</title>
+    <link href="~/Styles/images/yazakiIcon.ico" rel="SHORTCUT ICON" type="image/icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<script type="text/javascript">
+		function OnSplitterInit(s, e) {
+            s.RefreshState = function (state, panes) {
+                for (var i = 0; i < panes.length; i++) {
+                    debugger
+                    var pane = panes[i];
+                    var paneState = state[pane._index];
+
+                    paneState.s = Math.round(pane.size * 1000) / 1000;
+                    paneState.st = pane.sizeType;
+                    paneState.c = pane.collapsed ? 1 : 0;
+
+                    if (pane.panes.length == 0) {
+                        paneState.spt = Math.round(pane.scrollTop);
+                        paneState.spl = Math.round(pane.scrollLeft);
+                    }
+
+                    if (pane.panes.length > 0)
+                        this.RefreshState(paneState["i"], pane.panes);
+                }
+                return state;
+            }
+        }
+	</script>
+</head>
+<body bgcolor="White">
+    <center>
+    <form id="form1" runat="server">
+    <div id="headerWeb" style="width: 100%; height: 60px; background-color: White;">
+        <table width="100%" style="border: 1px ridge #000000">            
+            <tr>
+                <td rowspan="2" align="center" style="width:90px;">
+                    <dx:ASPxImage ID="imgHeader" runat="server" ImageUrl="~/Images/Logo.JPG" 
+                        Height="50px" Width="85px">
+                    </dx:ASPxImage>
+                </td>
+                <td align="left" valign="bottom" style="width:700px;">
+                    &nbsp
+                    <dx:ASPxLabel ID="lblTitle" ClientInstanceName="Title" runat="server" 
+                        Text="PT. AUTOCOMP SYSTEMS INDONESIA" Font-Size="Large" 
+                        CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx">
+                    </dx:ASPxLabel>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>                
+                <td align="left" valign="top">
+                    &nbsp
+                    <dx:ASPxLabel ID="lblMenuID" ClientInstanceName="MenuID" 
+                        runat="server" Text="" 
+                        CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx">
+                    </dx:ASPxLabel>
+                </td>
+                <td align="right" valign="bottom" style="height:25px;">
+                    <dx:ASPxLabel ID="lblUser" ClientInstanceName="UserID" 
+                        runat="server" Text=""
+                        CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+                        Font-Names="Tahoma" Font-Size="8pt">
+                    </dx:ASPxLabel> &nbsp 
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="space" style="height: 5px;">
+    </div>
+
+    <div id="contentWeb" style="width: 100%; height: 545px;">
+        <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" 
+            CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+            ShowCollapseBackwardButton="True" Height="540px">
+            <Panes>
+                <dx:SplitterPane ScrollBars="Both" Size="10px" Collapsed="True" Name="Menu" 
+                    ShowCollapseBackwardButton="True">                    
+                    <ContentCollection>
+                        <dx:SplitterContentControl runat="server" SupportsDisabledAttribute="True">
+                            <dx:ASPxTreeView ID="tvMenu" runat="server" EnableCallBacks="True" 
+                                Width="340px">
+                                <Images SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css">
+                                    <NodeLoadingPanel Url="~/App_Themes/Aqua/Web/tvNodeLoading.gif">
+                                    </NodeLoadingPanel>
+                                    <LoadingPanel Url="~/App_Themes/Aqua/Web/Loading.gif">
+                                    </LoadingPanel>
+                                </Images>
+                                <Styles CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua">
+                                </Styles>
+                                <Nodes>
+                                    <dx:TreeViewNode Text="Budgeting - Main Menu">
+                                        <NodeStyle>
+                                        <HoverStyle ForeColor="Blue">
+                                        </HoverStyle>
+                                        </NodeStyle>
+                                        <Nodes>
+                                            <dx:TreeViewNode Text="Master">
+                                                <NodeStyle>
+                                                <HoverStyle ForeColor="Blue">
+                                                </HoverStyle>
+                                                </NodeStyle>
+                                            </dx:TreeViewNode>
+                                        </Nodes>
+                                    </dx:TreeViewNode>
+                                </Nodes>
+                                <BackgroundImage Repeat="NoRepeat" />
+
+                                <BackgroundImage Repeat="NoRepeat"></BackgroundImage>
+                            </dx:ASPxTreeView>
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                    
+                </dx:SplitterPane>
+                <dx:SplitterPane Name="Content" Size="750px">
+                    <PaneStyle BackColor="White" HorizontalAlign="Center">
+                        <Border BorderStyle="None" />
+                    </PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl runat="server" SupportsDisabledAttribute="True">
+                            
+                                <asp:ContentPlaceHolder ID="Content" runat="server">
+                                    
+                                </asp:ContentPlaceHolder>
+                            
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                </dx:SplitterPane>
+            </Panes>
+			<ClientSideEvents Init="function(s, e) {
+				OnSplitterInit(s, e);
+            }" />
+
+            <Styles CssPostfix="DevEx" CssFilePath="~/App_Themes/DevEx/{0}/styles.css"></Styles>
+
+            <Images SpriteCssFilePath="~/App_Themes/DevEx/{0}/sprite.css">
+            </Images>
+        </dx:ASPxSplitter>
+    </div>
+    </form>
+    </center>
+</body>
+</html>

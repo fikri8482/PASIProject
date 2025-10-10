@@ -1,0 +1,26 @@
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\rptKanbanBarcode.rpt
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\rptKanbanBarcode.vb
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\Send To Supplier.exe.config
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\Send To Supplier.exe
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\Send To Supplier.pdb
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\Send To Supplier.xml
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\CrystalDecisions.Shared.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\GlobalSetting.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\System.Data.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\System.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\System.Drawing.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\System.Windows.Forms.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\System.Xml.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\System.Xml.Linq.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\GlobalSetting.pdb
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\bin\Debug\GlobalSetting.xml
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\New Send To Supplier.vbprojResolveAssemblyReference.cache
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\New_Send_To_Supplier.frmSendMail.resources
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\New_Send_To_Supplier.Resources.resources
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\New Send To Supplier.vbproj.GenerateResource.Cache
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\Send To Supplier.exe.licenses
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\Send To Supplier.exe
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\Send To Supplier.xml
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier\obj\x86\Debug\Send To Supplier.pdb

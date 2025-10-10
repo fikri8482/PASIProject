@@ -1,0 +1,58 @@
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbprojResolveAssemblyReference.cache
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.frmUpload.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.Resources.resources
+D:\TOS\PASI\01. Program\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.GenerateResource.Cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.exe
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.dll
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.pdb
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbprojResolveAssemblyReference.cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.frmUpload.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.Resources.resources
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.GenerateResource.Cache
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.exe
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.xml
+D:\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbprojResolveAssemblyReference.cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.frmUpload.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.dll
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.pdb
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbprojResolveAssemblyReference.cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.frmUpload.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.Resources.resources
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.GenerateResource.Cache
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.exe
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.xml
+D:\Fikri\dari toshiba\GentonG\pro\passsi\visit PASI\LIVE\99. BATCH PROCESS PASI SYSTEM Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.exe
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\bin\Debug\UPLOAD EMAIL.xml
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.dll
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.pdb
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\bin\Debug\GlobalSetting.xml
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbprojAssemblyReference.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.frmUpload.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD_EMAIL.Resources.resources
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.GenerateResource.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.CoreCompileInputs.cache
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.vbproj.CopyComplete
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.exe
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.xml
+D:\PPS\maj VS pps\03. AutoBatch Kanban\UPLOAD EMAIL\obj\x86\Debug\UPLOAD EMAIL.pdb

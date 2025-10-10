@@ -1,0 +1,19 @@
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\New Send To Supplier Export.exe
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\New Send To Supplier Export.pdb
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\New Send To Supplier Export.xml
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\GlobalSetting.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\System.Data.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\System.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\System.Drawing.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\System.Windows.Forms.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\System.Xml.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\System.Xml.Linq.dll
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\GlobalSetting.pdb
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\bin\Debug\GlobalSetting.xml
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New Send To Supplier Export.vbprojResolveAssemblyReference.cache
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New_Send_To_Supplier_Export.frmSendMailExport.resources
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New_Send_To_Supplier_Export.Resources.resources
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New Send To Supplier Export.vbproj.GenerateResource.Cache
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New Send To Supplier Export.exe
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New Send To Supplier Export.xml
+D:\02. My Project\13. PASI EBWEB\03. Source\77. New Send To Supplier\New Send To Supplier Export\obj\x86\Debug\New Send To Supplier Export.pdb

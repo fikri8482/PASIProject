@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="SqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="CustomSqlQuery1.Sql" xml:space="preserve">
+    <value>SELECT ETACust = Rtrim(CONVERT(CHAR(5), CONVERT(DATETIME, ISNULL(KM.Kanbandate, '')), 103)) , ETACustYear = '/' + CONVERT(CHAR(4), CONVERT(DATETIME, ISNULL(KM.Kanbandate, '')), 120) , ETACustTime = CONVERT(CHAR(5), KM.KanbanTime) , ETAPasi = CONVERT(CHAR(5), CONVERT(DATETIME, ISNULL(MEP.ETDPASI, '')), 103) , ETAPasiYear = '/' + CONVERT(CHAR(4), CONVERT(DATETIME, ISNULL(MEP.ETDPasi, '')), 120) , ETAPasiTime = '12:00' , KanbanNo = RTRIM(KM.KanbanNo) , SeqStart = Rtrim(CONVERT(NUMERIC, isnull(seqnoStart, 0))) , SeqEnd = Rtrim(CONVERT(NUMERIC, isnull(seqnoEnd, 0))) , PartNo1 = Rtrim(KD.PartNo), PartNo2 = '', PartNo3 = '' , PartName = Rtrim(MP.PartName) , PartCMCode = Rtrim(ISNULL(MP.PartCarMaker, '')) , PartCMName = Rtrim(ISNULL(MP.PartCarName, '')) , Qty = Replace(Rtrim(MP.QtyBox), '.00', '') , BoxNo = Rtrim(isnull(KB.BoxNo, '')) , Cust = RTRIM(KM.AffiliateID) + '-' + MD.DockID , AFFCode = Rtrim(ISNULL(MA.AffiliateCode, '')) , Location = Rtrim(ISNULL(ML.LocationID, '')) , SupplierID = RTRIM(KM.SupplierID) + '#1' , SupplierCode = Rtrim(ISNULL(MS.SupplierCode, '')) , Barcode = '20150601,EDIKMK,500' FROM dbo.Kanban_Master KM LEFT JOIN dbo.Kanban_Detail KD ON KM.AffiliateID = KD.AffiliateID AND kanbanqty &lt;&gt; 0 AND KM.KanbanNo = KD.KanbanNo AND KM.SupplierID = KD.SupplierID LEFT JOIN dbo.MS_Supplier MS ON MS.SupplierID = KM.SupplierID LEFT JOIN dbo.MS_Parts MP ON MP.PartNo = KD.PartNo INNER JOIN Kanban_Barcode KB ON KB.PONO = KD.PONO AND KB.KanbanNo = KD.Kanbanno AND KB.AffiliateID = KD.AffiliateID AND KB.DeliveryLocationCode = KD.DeliveryLocationCode AND KB.SupplierID = KD.SupplierID AND KB.PartNo = KD.PartNo LEFT JOIN MS_Location ML ON KM.AffiliateID = ML.affiliateID LEFT JOIN ms_dock MD ON MD.AffiliateID = KM.AffiliateID LEFT JOIN MS_Affiliate MA ON MA.AffiliateID = KM.AffiliateID LEFT JOIN ms_Etd_pasi MEP ON MEP.affiliateID = KM.AffiliateID AND CONVERT(CHAR(8), CONVERT(DATETIME, ISNULL(KM.Kanbandate, '')), 112) = CONVERT(CHAR(8), CONVERT(DATETIME, ISNULL(MEP.ETDPASI, '')), 112) WHERE KD.AffiliateID = 'PEMI' AND convert(char(11), convert(datetime, KanbanDate), 106) IN ('11 Mar 2016') AND KD.SupplierID IN ('KMK') AND KD.DeliveryLocationCode = 'PEMI' AND KD.kanbanno in ('20160311-1') order by kanbanno, KD.partno, seqNostart</value>
+  </data>
+  <data name="SqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iTmV3RGF0YVNldCI+PFZpZXcgTmFtZT0iQ3VzdG9tU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJFVEFDdXN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVUQUN1c3RZZWFyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVUQUN1c3RUaW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVUQVBhc2kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRVRBUGFzaVllYXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRVRBUGFzaVRpbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iS2FuYmFuTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VxU3RhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VxRW5kIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnRObzEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydE5vMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0Tm8zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnRDTUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydENNTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJRdHkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQm94Tm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBRkZDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxvY2F0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1cHBsaWVySUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3VwcGxpZXJDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJhcmNvZGUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

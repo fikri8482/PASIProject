@@ -1,0 +1,4 @@
+D:\02. My Project\13. PASI EBWEB\03. Source\BATCH PROCESS PASI SYSTEM\GET MAIL\obj\x86\Debug\GET MAIL.vbprojResolveAssemblyReference.cache
+D:\02. My Project\13. PASI EBWEB\03. Source\BATCH PROCESS PASI SYSTEM\GET MAIL\obj\x86\Debug\GET_MAIL.frmGetMail.resources
+D:\02. My Project\13. PASI EBWEB\03. Source\BATCH PROCESS PASI SYSTEM\GET MAIL\obj\x86\Debug\GET_MAIL.Resources.resources
+D:\02. My Project\13. PASI EBWEB\03. Source\BATCH PROCESS PASI SYSTEM\GET MAIL\obj\x86\Debug\GET MAIL.vbproj.GenerateResource.Cache

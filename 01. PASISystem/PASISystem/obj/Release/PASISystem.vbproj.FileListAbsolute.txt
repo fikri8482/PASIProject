@@ -1,0 +1,301 @@
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\Invoice.rpt
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\rptShippingInstruction.rpt
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\TallyData.rpt
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\rptShippingInstruction.vb
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\Invoice1.vb
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\TallyData.vb
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\PASISystem.dll
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\PASISystem.pdb
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\bin\PASISystem.xml
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.vbprojResolveAssemblyReference.cache
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.KanbanCard.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.KanbanCard2.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptKanbanCycle.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.rptDeliveryToFor.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.rptGoodReceivingReportExport.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.rptDeliveryToAff.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.rptInfoiceToAffiliate.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.Resources.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptPackingListExport.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptPackingListExportDetail.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptPackingList.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.LabelExport.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.rptGoodReceivingNew.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.rptGoodReceivingReport.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptInvoice.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptShipping.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.RptTally.resources
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.vbproj.GenerateResource.Cache
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.dll.licenses
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.dll
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.xml
+D:\TOS\PASI\01. Program\02. PASISystem\PASISystem\obj\Release\PASISystem.pdb
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\Invoice.rpt
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\rptShippingInstruction.rpt
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\TallyData.rpt
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\rptShippingInstruction.vb
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\Invoice1.vb
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\TallyData.vb
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\PASISystem.dll
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\PASISystem.pdb
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\bin\PASISystem.xml
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.KanbanCard.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.KanbanCard2.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptKanbanCycle.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.rptDeliveryToFor.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.rptGoodReceivingReportExport.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.rptDeliveryToAff.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.rptInfoiceToAffiliate.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.Resources.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptPackingListExport.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptPackingListExportDetail.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptPackingList.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.LabelExport.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.rptGoodReceivingNew.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.rptGoodReceivingReport.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptInvoice.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptShipping.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.RptTally.resources
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.vbproj.GenerateResource.Cache
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.dll.licenses
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.dll
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.xml
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.pdb
+D:\PPS\06. Source Code\02. PASISystem\PASISystem\obj\Release\PASISystem.vbprojResolveAssemblyReference.cache
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.vbprojResolveAssemblyReference.cache
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.KanbanCard.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.KanbanCard2.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptKanbanCycle.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.rptDeliveryToFor.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.rptGoodReceivingReportExport.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.rptDeliveryToAff.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.rptInfoiceToAffiliate.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.Resources.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptPackingListExport.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptPackingListExportDetail.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptPackingList.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.LabelExport.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.rptGoodReceivingNew.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.rptGoodReceivingReport.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptInvoice.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptShipping.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.RptTally.resources
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.vbproj.GenerateResource.Cache
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.dll.licenses
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.dll
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.xml
+D:\PPS\06. Source Code\02. PASISystem ( Backup )\PASISystem\obj\Release\PASISystem.pdb
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\Invoice.rpt
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\rptShippingInstruction.rpt
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\TallyData.rpt
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\rptShippingInstruction.vb
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\Invoice1.vb
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\TallyData.vb
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\PASISystem.dll.config
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\PASISystem.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\PASISystem.pdb
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\PASISystem.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Data.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.DataAccess.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Office.v14.1.Core.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Xpo.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraEditors.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraBars.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraTreeList.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraCharts.v14.1.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Charts.v14.1.Core.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.PivotGrid.v14.1.Core.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Sparkline.v14.1.Core.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraGauges.v14.1.Core.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\stdole.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Data.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.DataAccess.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Office.v14.1.Core.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Xpo.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraEditors.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraBars.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraTreeList.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraCharts.v14.1.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.PivotGrid.v14.1.Core.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.Sparkline.v14.1.Core.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\DevExpress.XtraGauges.v14.1.Core.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\de\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\es\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ja\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\bin\ru\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.vbprojAssemblyReference.cache
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.KanbanCard.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.KanbanCard2.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptKanbanCycle.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.rptDeliveryToFor.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.rptGoodReceivingReportExport.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.rptDeliveryToAff.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptFinalInvoice.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.rptInfoiceToAffiliate.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.Resources.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptPackingListExport.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptPackingListExportDetail.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptPackingList.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.LabelExport.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.rptGoodReceivingNew.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.rptGoodReceivingReport.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptInvoice.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptShipping.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.RptTally.resources
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.vbproj.GenerateResource.cache
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.dll.licenses
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.vbproj.CoreCompileInputs.cache
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.vbproj.CopyComplete
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.dll
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.xml
+D:\PPS\06. Source Code\Publish PASISystem New\PASISystem\obj\Release\PASISystem.pdb
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\Invoice.rpt
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\rptShippingInstruction.rpt
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\TallyData.rpt
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\rptShippingInstruction.vb
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\Invoice1.vb
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\TallyData.vb
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\PASISystem.dll.config
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\PASISystem.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\PASISystem.pdb
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\PASISystem.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Data.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.DataAccess.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Office.v14.1.Core.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Xpo.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraEditors.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraBars.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraTreeList.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraCharts.v14.1.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Charts.v14.1.Core.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.PivotGrid.v14.1.Core.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Sparkline.v14.1.Core.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraGauges.v14.1.Core.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\stdole.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Data.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.DataAccess.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Office.v14.1.Core.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Xpo.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraEditors.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraBars.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraTreeList.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraCharts.v14.1.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.PivotGrid.v14.1.Core.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.Sparkline.v14.1.Core.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\DevExpress.XtraGauges.v14.1.Core.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.Data.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.DataAccess.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.Xpo.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.XtraEditors.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.XtraBars.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.XtraCharts.v14.1.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\de\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\es\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ja\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\ru\DevExpress.XtraGauges.v14.1.Core.resources.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.vbprojAssemblyReference.cache
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.KanbanCard.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.KanbanCard2.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptKanbanCycle.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.rptDeliveryToFor.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.rptGoodReceivingReportExport.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.rptDeliveryToAff.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptFinalInvoice.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.rptInfoiceToAffiliate.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.Resources.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptPackingListExport.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptPackingListExportDetail.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptPackingList.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.LabelExport.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.rptGoodReceivingNew.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.rptGoodReceivingReport.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptInvoice.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptShipping.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.RptTally.resources
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.vbproj.GenerateResource.cache
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.dll.licenses
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.vbproj.CoreCompileInputs.cache
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.vbproj.CopyComplete
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.xml
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\obj\Release\PASISystem.pdb
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\PPS\06. Source Code\PASI DEV MAJ\PASISystem\bin\CrystalDecisions.ReportAppServer.CommonControls.dll

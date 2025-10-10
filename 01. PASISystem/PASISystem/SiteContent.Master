@@ -1,0 +1,172 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteContent.master.vb" Inherits="PASISystem.SiteContent" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxTreeView" tagprefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>PURCHASING SYSTEM - AFFILIATE</title>
+    <link href="~/Styles/images/yazakiIcon.ico" rel="SHORTCUT ICON" type="image/icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--#96c8ff-->
+
+    <script type="text/javascript">
+        
+        function OnInitSplitter(s, e) {
+            AdjustSizeSplitter();
+        }
+
+        function OnControlsInitializedSplitter(s, e) {
+            ASPxClientUtils.AttachEventToElement(window, "resize", function (evt) {
+                AdjustSizeSplitter();
+            });
+        }
+        function AdjustSizeSplitter() {
+            debugger
+            var myWidth = 0, myHeight = 0;
+            if (typeof (window.innerWidth) == 'number') {
+                //Non-IE
+                myWidth = window.innerWidth;
+                myHeight = window.innerHeight;
+            } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+                //IE 6+ in 'standards compliant mode'
+                myWidth = document.documentElement.clientWidth;
+                myHeight = document.documentElement.clientHeight;
+            } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+                //IE 4 compatible
+                myWidth = document.body.clientWidth;
+                myHeight = document.body.clientHeight;
+            }
+
+            var splitterheight = Math.max(0, myHeight);
+            splitterheight = splitterheight - (splitterheight * 5 / 100) + 5;
+            Splitter.SetHeight(splitterheight);                        
+        }
+    </script>
+</head>
+<body bgcolor="White">
+    <center>
+    <form id="form1" runat="server">
+    
+    <div id="contentWeb" style="width:100%;">
+        <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" 
+            CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+            ShowCollapseBackwardButton="True"  Border-BorderColor="White" ClientInstanceName="Splitter"
+            Width="100%" Height="600px">
+            <Panes>
+                <dx:SplitterPane ScrollBars="Both" Size="0" Collapsed="True" Name="Menu" 
+                    ShowCollapseBackwardButton="True">                    
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="SplitterContentControl1" runat="server" SupportsDisabledAttribute="True">
+                            <dx:ASPxTreeView ID="tvMenu" runat="server" EnableCallBacks="True" 
+                                Width="100%">
+                                <Images SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css">
+                                    <NodeLoadingPanel Url="~/App_Themes/Aqua/Web/tvNodeLoading.gif">
+                                    </NodeLoadingPanel>
+                                    <LoadingPanel Url="~/App_Themes/Aqua/Web/Loading.gif">
+                                    </LoadingPanel>
+                                </Images>
+                                <Styles CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua">
+                                </Styles>
+                                <Nodes>
+                                    <dx:TreeViewNode Text="Budgeting - Main Menu">
+                                        <NodeStyle>
+                                        <HoverStyle ForeColor="Blue">
+                                        </HoverStyle>
+                                        </NodeStyle>
+                                        <Nodes>
+                                            <dx:TreeViewNode Text="Master">
+                                                <NodeStyle>
+                                                <HoverStyle ForeColor="Blue">
+                                                </HoverStyle>
+                                                </NodeStyle>
+                                            </dx:TreeViewNode>
+                                        </Nodes>
+                                    </dx:TreeViewNode>
+                                </Nodes>
+                                <BackgroundImage Repeat="NoRepeat" />
+
+                                <BackgroundImage Repeat="NoRepeat"></BackgroundImage>
+                            </dx:ASPxTreeView>
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                    
+                </dx:SplitterPane>
+                <dx:SplitterPane Name="Content" Size="100" ScrollBars="Auto">
+                    <PaneStyle BackColor="White" HorizontalAlign="Center">
+                        <Border BorderStyle="None" />
+                    </PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="SplitterContentControl2" runat="server" SupportsDisabledAttribute="True">
+                            <div id="headerWeb" style="width: 100%; height: 50px; background-color: White;">
+                                <table width="100%" bgcolor="#3333FF">
+                                    <tr bgcolor="#3333FF">
+                                        <td align="left" valign="middle" style="width:700px;" bgcolor="#3333FF">
+                                            &nbsp;
+                                            <dx:ASPxLabel ID="lblSystem" ClientInstanceName="TitleSystem" runat="server" 
+                                                Text="[PASI SYSTEM] "
+                                                CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+                                                Font-Names="Tahoma" Font-Bold="true" Font-Size="13px" ForeColor="White">
+                                            </dx:ASPxLabel>
+                                            <dx:ASPxLabel ID="lblMenuID" ClientInstanceName="Title" runat="server" 
+                                                Text=""
+                                                CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+                                                Font-Names="Tahoma" Font-Bold="true" Font-Size="13px" ForeColor="White">
+                                            </dx:ASPxLabel>
+                                        </td>
+                                        <td align="right" valign="middle" bgcolor="#3333FF">
+                                            <dx:ASPxLabel ID="lblUser" ClientInstanceName="UserID" 
+                                                runat="server" Text=""
+                                                CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+                                                Font-Names="Tahoma" Font-Size="8pt" ForeColor="White">
+                                            </dx:ASPxLabel> &nbsp
+                                        </td>
+                                    </tr>                                    
+                                </table>
+                                <table width="100%">            
+                                    <tr>
+                                        <td rowspan="2" align="center" style="width:90px;">
+                                            <dx:ASPxImage ID="imgHeader" runat="server" ImageUrl="~/Images/Logo.JPG" 
+                                                Height="25px" Width="85px">
+                                            </dx:ASPxImage>
+                                        </td>
+                                        <td align="left" valign="top" style="width:700px;">
+                                            &nbsp
+                                            <dx:ASPxLabel ID="lblTitle" ClientInstanceName="Title" runat="server" 
+                                                Text="PT. AUTOCOMP SYSTEMS INDONESIA" Font-Size="Small" 
+                                                CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx" 
+                                                Font-Bold="True">
+                                            </dx:ASPxLabel>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>                            
+                            <div style="height:7px;"></div>
+                            <asp:ContentPlaceHolder ID="Content" runat="server">
+                                <!-- PUT YOUR CODE HERE! -->
+                            </asp:ContentPlaceHolder>                                                          
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                </dx:SplitterPane>
+            </Panes>
+
+            <ClientSideEvents Init="OnInitSplitter" />
+
+            <Styles CssPostfix="DevEx" CssFilePath="~/App_Themes/DevEx/{0}/styles.css"></Styles>
+
+            <Images SpriteCssFilePath="~/App_Themes/DevEx/{0}/sprite.css">
+            </Images>
+
+        <Border BorderColor="White"></Border>
+        </dx:ASPxSplitter>
+    </div>
+    </form>
+    </center>        
+</body>
+</html>
