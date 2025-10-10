@@ -1,8 +1,0 @@
-[Setting]
-server= 192.168.0.5\SQL2014
-DatabaseName= PASI_EBWEB2
-User=sa
-Password=y2k
-Path = D:\New Folder\PASI\POP3\GetEmail\GetEmail\bin\Debug\inbox
-
-
