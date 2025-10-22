@@ -2073,7 +2073,7 @@ keluar:
                      "  LEFT JOIN MS_Supplier MS ON MS.SupplierID = PME.SupplierID  " & vbCrLf &
                      "  LEFT JOIN MS_Forwarder MF ON MF.ForwarderID = PME.ForwarderID  " & vbCrLf &
                      "  LEFT JOIN MS_Affiliate MA ON MA.AffiliateID = PME.AffiliateID  " & vbCrLf &
-                     "  where isnull(FinalApprovalCls,0) IN ('1', '3', '4') and isnull(PONO,'') <> '' OR OrderNo1 = 'YC5101Y-7360G85904-2' "
+                     "  where isnull(FinalApprovalCls,0) IN ('1', '3', '4') and isnull(PONO,'') <> '' "
 
             'MdlConn.ReadConnection()
             ds = cls.uf_GetDataSet(ls_sql)
