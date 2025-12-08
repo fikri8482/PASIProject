@@ -116,7 +116,7 @@ Public Class SuppDeliveryConf
                   "  		H_PLANDELDATE,H_ALREADYDELIVER,H_REMAINING,H_SUPPLIER,H_RECEIVEDATE,H_SURATJALAN " & vbCrLf & _
                   "  	FROM (  " & vbCrLf & _
                   "  		SELECT DISTINCT    " & vbCrLf & _
-                  "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,'')),106)   " & vbCrLf
+                  "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,GETDATE())),106)   " & vbCrLf
 
             ls_SQL = ls_SQL + "                                                  + '|' +Rtrim(POM.SupplierID) + '|' +Rtrim(MS.SupplierName)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(ISNULL(DOM.SuratJalanNo,''))   " & vbCrLf & _
@@ -207,7 +207,7 @@ Public Class SuppDeliveryConf
             ls_SQL = ls_SQL + " UNION ALL " & vbCrLf
 
             ls_SQL = ls_SQL + "  		SELECT DISTINCT    " & vbCrLf & _
-                              "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,'')),106)   " & vbCrLf & _
+                              "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,GETDATE())),106)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(POM.SupplierID)                                                   + '|' +Rtrim(MS.SupplierName)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(ISNULL(DOM.SuratJalanNo,''))   " & vbCrLf & _
                               "                                                  + '|' +Rtrim( CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(KM.KanbanDate,'')),106))   " & vbCrLf & _

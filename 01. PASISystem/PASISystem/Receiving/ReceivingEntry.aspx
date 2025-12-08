@@ -90,7 +90,8 @@
                         </td>
                         <td align="left">
                 <dx1:ASPxDateEdit ID="dt1" runat="server" ClientInstanceName="dt1" Font-Names="Tahoma"
-                    Font-Size="8pt" EditFormat="Custom" EditFormatString="dd MMM yyyy">
+                    Font-Size="8pt" EditFormat="Custom" EditFormatString="dd MMM yyyy" >
+                    <ClientSideEvents Init="function(s, e) { s.SetDate(new Date()); }" />
                 </dx1:ASPxDateEdit>
                         </td>
                         <td align="left">
