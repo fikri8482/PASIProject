@@ -300,17 +300,17 @@ Public Class clsMaster
             Using cn As New SqlConnection(clsGlobal.ConnectionString)
                 cn.Open()
                 Dim sql As String = ""
-                ls_sql = " SELECT RTRIM(a.[PartNo])PartNo " & vbCrLf & _
-                          "       ,a.[PartName] " & vbCrLf & _
-                          "       ,RTRIM(a.[PartCarMaker]) PartCarMaker " & vbCrLf & _
-                          "       ,RTRIM(a.[PartCarName]) PartCarName " & vbCrLf & _
-                          "       ,RTRIM(a.[PartGroupName]) PartGroupName " & vbCrLf & _
-                          "       ,RTRIM(a.[HSCode]) HSCode " & vbCrLf & _
-                          "       ,RTRIM(b.[Description])UnitCls" & vbCrLf & _
-                          "       ,CASE WHEN a.[KanbanCls] = '1' then 'YES' else 'NO' END KanbanCls" & vbCrLf & _
-                          "       ,a.[Maker] " & vbCrLf & _
-                          "       ,a.[Project] " & vbCrLf & _
-                          "   FROM [MS_Parts] a LEFT JOIN MS_UnitCls b ON a.UnitCls = b.UnitCls " & vbCrLf & _
+                ls_sql = " SELECT RTRIM(a.[PartNo])PartNo " & vbCrLf &
+                          "       ,RTRIM(a.[PartName]) PartName " & vbCrLf &
+                          "       ,RTRIM(a.[PartCarMaker]) PartCarMaker " & vbCrLf &
+                          "       ,RTRIM(a.[PartCarName]) PartCarName " & vbCrLf &
+                          "       ,RTRIM(a.[PartGroupName]) PartGroupName " & vbCrLf &
+                          "       ,RTRIM(a.[HSCode]) HSCode " & vbCrLf &
+                          "       ,RTRIM(b.[Description])UnitCls" & vbCrLf &
+                          "       ,CASE WHEN a.[KanbanCls] = '1' then 'YES' else 'NO' END KanbanCls" & vbCrLf &
+                          "       ,RTRIM(a.[Maker]) Maker" & vbCrLf &
+                          "       ,RTRIM(a.[Project]) Project" & vbCrLf &
+                          "   FROM [MS_Parts] a LEFT JOIN MS_UnitCls b ON a.UnitCls = b.UnitCls " & vbCrLf &
                           " where 'A' = 'A' " & pWhere & ""
 
                 Dim Cmd As New SqlCommand(ls_sql, cn)

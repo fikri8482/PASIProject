@@ -116,7 +116,7 @@ Public Class SuppDeliveryConf
                   "  		H_PLANDELDATE,H_ALREADYDELIVER,H_REMAINING,H_SUPPLIER,H_RECEIVEDATE,H_SURATJALAN " & vbCrLf & _
                   "  	FROM (  " & vbCrLf & _
                   "  		SELECT DISTINCT    " & vbCrLf & _
-                  "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,GETDATE())),106)   " & vbCrLf
+                  "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,'')),106)   " & vbCrLf
 
             ls_SQL = ls_SQL + "                                                  + '|' +Rtrim(POM.SupplierID) + '|' +Rtrim(MS.SupplierName)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(ISNULL(DOM.SuratJalanNo,''))   " & vbCrLf & _
@@ -207,7 +207,7 @@ Public Class SuppDeliveryConf
             ls_SQL = ls_SQL + " UNION ALL " & vbCrLf
 
             ls_SQL = ls_SQL + "  		SELECT DISTINCT    " & vbCrLf & _
-                              "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,GETDATE())),106)   " & vbCrLf & _
+                              "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,'')),106)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(POM.SupplierID)                                                   + '|' +Rtrim(MS.SupplierName)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(ISNULL(DOM.SuratJalanNo,''))   " & vbCrLf & _
                               "                                                  + '|' +Rtrim( CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(KM.KanbanDate,'')),106))   " & vbCrLf & _
@@ -549,25 +549,25 @@ Public Class SuppDeliveryConf
 
         Using sqlConn As New SqlConnection(clsGlobal.ConnectionString)
             sqlConn.Open()
-            ls_SQL = "  SELECT * FROM (  " & vbCrLf & _
-                     "  	SELECT distinct coldetail, coldetailname, CONVERT(CHAR,ROW_NUMBER() OVER (ORDER BY h_poorder, H_SURATJALAN,H_SJ,H_PLANDELDATE,h_idxorder)) AS colno,  " & vbCrLf & _
-                     "  		colperiod, colaffiliatecode, colaffiliatename ,  " & vbCrLf & _
-                     "  		colpono, colsuppliercode,colsuppliername, colpokanban, colkanbanno,  " & vbCrLf & _
-                     "  		colplandeldate, coldeldate, colsj,colpartno,colpartname,  " & vbCrLf & _
-                     "  		coluom,coldeliveryqty,colreceiveqty,coldefect,colremaining,colreceivedate= (CASE WHEN colreceivedate = '01 Jan 1900' THEN '' ELSE colreceivedate END) ,  " & vbCrLf & _
-                     "  		colreceiveby,H_POORDER, H_IDXORDER ,H_KANBANORDER ,H_AFFILIATEORDER, H_KANBANCLS, " & vbCrLf & _
-                     "  		H_PLANDELDATE,H_ALREADYDELIVER,H_REMAINING,H_SUPPLIER,H_RECEIVEDATE,H_SURATJALAN, H_SJ " & vbCrLf & _
-                     "  	FROM (  " & vbCrLf & _
-                     "  	SELECT distinct coldetail, coldetailname = CASE WHEN ISNULL(H_SJ,'')='' THEN 'RECEIVE' ELSE 'DETAIL' END, colno = '',  " & vbCrLf & _
-                     "  		colperiod, colaffiliatecode, colaffiliatename ,  " & vbCrLf & _
-                     "  		colpono, colsuppliercode,colsuppliername, colpokanban, colkanbanno,  " & vbCrLf & _
-                     "  		colplandeldate, coldeldate, colsj,colpartno,colpartname,  " & vbCrLf & _
-                     "  		coluom,coldeliveryqty,colreceiveqty,coldefect,colremaining,colreceivedate= (CASE WHEN colreceivedate = '01 Jan 1900' THEN '' ELSE colreceivedate END) ,  " & vbCrLf & _
-                     "  		colreceiveby,H_POORDER, H_IDXORDER ,H_KANBANORDER ,H_AFFILIATEORDER, H_KANBANCLS, " & vbCrLf & _
-                     "  		H_PLANDELDATE,H_ALREADYDELIVER,H_REMAINING,H_SUPPLIER,H_RECEIVEDATE,H_SURATJALAN, H_SJ " & vbCrLf & _
-                     "  	FROM (  " & vbCrLf & _
-                     "  		SELECT DISTINCT    " & vbCrLf & _
-                     "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,'')),106)   " & vbCrLf
+            ls_SQL = "  SELECT * FROM (  " & vbCrLf &
+                     "  	SELECT distinct coldetail, coldetailname, CONVERT(CHAR,ROW_NUMBER() OVER (ORDER BY h_poorder, H_SURATJALAN,H_SJ,H_PLANDELDATE,h_idxorder)) AS colno,  " & vbCrLf &
+                     "  		colperiod, colaffiliatecode, colaffiliatename ,  " & vbCrLf &
+                     "  		colpono, colsuppliercode,colsuppliername, colpokanban, colkanbanno,  " & vbCrLf &
+                     "  		colplandeldate, coldeldate, colsj,colpartno,colpartname,  " & vbCrLf &
+                     "  		coluom,coldeliveryqty,colreceiveqty,coldefect,colremaining,colreceivedate= (CASE WHEN colreceivedate = '01 Jan 1900' THEN '' ELSE colreceivedate END) ,  " & vbCrLf &
+                     "  		colreceiveby,H_POORDER, H_IDXORDER ,H_KANBANORDER ,H_AFFILIATEORDER, H_KANBANCLS, " & vbCrLf &
+                     "  		H_PLANDELDATE,H_ALREADYDELIVER,H_REMAINING,H_SUPPLIER,H_RECEIVEDATE,H_SURATJALAN, H_SJ " & vbCrLf &
+                     "  	FROM (  " & vbCrLf &
+                     "  	SELECT distinct coldetail, coldetailname = CASE WHEN ISNULL(H_SJ,'')='' THEN 'RECEIVE' ELSE 'DETAIL' END, colno = '',  " & vbCrLf &
+                     "  		colperiod, colaffiliatecode, colaffiliatename ,  " & vbCrLf &
+                     "  		colpono, colsuppliercode,colsuppliername, colpokanban, colkanbanno,  " & vbCrLf &
+                     "  		colplandeldate, coldeldate, colsj,colpartno,colpartname,  " & vbCrLf &
+                     "  		coluom,coldeliveryqty,colreceiveqty,coldefect,colremaining,colreceivedate= (CASE WHEN colreceivedate = '01 Jan 1900' THEN '' ELSE colreceivedate END) ,  " & vbCrLf &
+                     "  		colreceiveby,H_POORDER, H_IDXORDER ,H_KANBANORDER ,H_AFFILIATEORDER, H_KANBANCLS, " & vbCrLf &
+                     "  		H_PLANDELDATE,H_ALREADYDELIVER,H_REMAINING,H_SUPPLIER,H_RECEIVEDATE,H_SURATJALAN, H_SJ " & vbCrLf &
+                     "  	FROM (  " & vbCrLf &
+                     "  		SELECT DISTINCT    " & vbCrLf &
+                     "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,GETDATE())),106)   " & vbCrLf
 
             ls_SQL = ls_SQL + "                                                  + '|' +Rtrim(POM.SupplierID) + '|' +Rtrim(MS.SupplierName)   " & vbCrLf & _
                               "                                                  + '|' +Rtrim(REPLACE(ISNULL(DOM.SuratJalanNo,''),'&','DAN'))   " & vbCrLf & _
@@ -665,26 +665,26 @@ Public Class SuppDeliveryConf
                               "  		 --DATA DO YG SUDAH DI RECEIVE " & vbCrLf
             ls_SQL = ls_SQL + " UNION ALL " & vbCrLf
 
-            ls_SQL = ls_SQL + "  		SELECT DISTINCT    " & vbCrLf & _
-                              "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,'')),106) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(POM.SupplierID)                                                   + '|' +Rtrim(MS.SupplierName)   " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(REPLACE(ISNULL(DOM.SuratJalanNo,''),'&','DAN'))   " & vbCrLf & _
-                              "                                                  + '|' +''   " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(DOM.DeliveryDate,'')),106))   " & vbCrLf & _
-                              "                                                  + '|' +''   --+ '|' +Rtrim(CASE WHEN POD.KanbanCls = '0' THEN '-' ELSE ISNULL(KD.KanbanNo,'') END)  " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(POM.AffiliateID) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(DOD.PONo) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(DOM.DriverName) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(DOM.DriverContact) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(DOM.NoPol) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(DOM.JenisArmada) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(DOM.TotalBox) " & vbCrLf & _
-                              "                                                  + '|' +Rtrim(KM.KanbanDate) , " & vbCrLf & _
-                              "   				 coldetailname = CASE WHEN ISNULL(RD.SuratJalanNo,'')='' THEN 'RECEIVE' ELSE 'DETAIL' END,    " & vbCrLf & _
-                              "  				 colno = '' ,   " & vbCrLf & _
-                              "  				 colperiod = Right(Convert(char(11),Convert(datetime,POM.Period),106),8) ,   " & vbCrLf & _
-                              "  				 colaffiliatecode = POM.AffiliateID ,    " & vbCrLf & _
-                              "  				 colaffiliatename = MA.AffiliateName ,    " & vbCrLf & _
+            ls_SQL = ls_SQL + "  		SELECT DISTINCT    " & vbCrLf &
+                              "   				 coldetail = 'ReceivingEntry.aspx?prm='+CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(RM.entryDate,GETDATE())),106) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(POM.SupplierID)                                                   + '|' +Rtrim(MS.SupplierName)   " & vbCrLf &
+                              "                                                  + '|' +Rtrim(REPLACE(ISNULL(DOM.SuratJalanNo,''),'&','DAN'))   " & vbCrLf &
+                              "                                                  + '|' +''   " & vbCrLf &
+                              "                                                  + '|' +Rtrim(CONVERT(CHAR(12), CONVERT(DATETIME,ISNULL(DOM.DeliveryDate,'')),106))   " & vbCrLf &
+                              "                                                  + '|' +''   --+ '|' +Rtrim(CASE WHEN POD.KanbanCls = '0' THEN '-' ELSE ISNULL(KD.KanbanNo,'') END)  " & vbCrLf &
+                              "                                                  + '|' +Rtrim(POM.AffiliateID) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(DOD.PONo) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(DOM.DriverName) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(DOM.DriverContact) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(DOM.NoPol) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(DOM.JenisArmada) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(DOM.TotalBox) " & vbCrLf &
+                              "                                                  + '|' +Rtrim(KM.KanbanDate) , " & vbCrLf &
+                              "   				 coldetailname = CASE WHEN ISNULL(RD.SuratJalanNo,'')='' THEN 'RECEIVE' ELSE 'DETAIL' END,    " & vbCrLf &
+                              "  				 colno = '' ,   " & vbCrLf &
+                              "  				 colperiod = Right(Convert(char(11),Convert(datetime,POM.Period),106),8) ,   " & vbCrLf &
+                              "  				 colaffiliatecode = POM.AffiliateID ,    " & vbCrLf &
+                              "  				 colaffiliatename = MA.AffiliateName ,    " & vbCrLf &
                               "  				 colpono = POM.PONo , colsuppliercode = POM.SupplierID ,    " & vbCrLf
 
             ls_SQL = ls_SQL + "  				 colsuppliername = MS.SupplierName ,    " & vbCrLf & _
