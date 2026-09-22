@@ -1,0 +1,297 @@
+/****** Object:  StoredProcedure [dbo].[sp_SendInvoiceEDI_Export]    Script Date: 6/26/2018 11:18:26 AM ******/
+DROP PROCEDURE [dbo].[sp_SendInvoiceEDI_Export]
+GO
+
+/****** Object:  StoredProcedure [dbo].[sp_SendInvoiceEDI_Export]    Script Date: 6/26/2018 11:18:26 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_SendInvoiceEDI_Export](
+	@InvoiceNo CHAR(20),
+	@AffiliateID CHAR(20)
+)
+AS
+BEGIN
+
+	--DECLARE @InvoiceNo CHAR(20)
+	--DECLARE @AffiliateID CHAR(20)
+
+	--SET @InvoiceNo = 'EAVP80012B'
+	--SET @AffiliateID = 'YHV'
+
+	SELECT * FROM(
+
+		SELECT DISTINCT 
+		a = 'H00' + 
+		CONVERT(CHAR(8), 'VD01') + 
+		CONVERT(CHAR(8), '32G8') + 
+		CONVERT(CHAR(8), AFI.ConsigneeCode) +
+		CONVERT(CHAR(8), CONVERT(DATETIME, GETDATE()), 112) +
+		REPLACE(CONVERT (VARCHAR(8), GETDATE(), 108), ':', '') + 
+		CONVERT(CHAR(15), 'INVOICE-DATA') + 
+		CONVERT(CHAR(19), ''), 
+		INVOICENO = IVM.ShippingInstructionNo, 
+		AFFILIATEID = IVM.AffiliateID,
+		PARTNO = '',
+		KANBANNO = '', 
+		IDX = 1
+		FROM ShippingInstruction_Master IVM 
+		INNER JOIN MS_Affiliate AFI ON IVM.AffiliateID = AFI.AffiliateID
+
+		UNION ALL 
+	
+		SELECT DISTINCT 
+		a = 'H10' + 
+		CONVERT(CHAR(6), CONVERT(VARCHAR, IVM.ETAFactory, 112)) + 
+		CASE WHEN ISNULL(IVM.TypeOfService, '') = 'AIR FREIGHT' THEN CONVERT(CHAR(1), 'A') ELSE CONVERT(CHAR(1), 'B') END + 
+		CONVERT(CHAR(35), ISNULL(TM.Vessel, '')) + 
+		CONVERT(CHAR(10), '') + 
+		CONVERT(CHAR(15), ISNULL(TM.ContainerNo, '')) + '2' + 
+		CONVERT(CHAR(4), ''),
+		INVOICENO = IVM.ShippingInstructionNo, 
+		AFFILIATEID = IVM.AffiliateID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 2 
+		FROM ShippingInstruction_Master IVM 
+		LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID
+		LEFT JOIN Tally_Master TM ON IVM.ShippingInstructionNo = TM.ShippingInstructionNo AND IVM.AffiliateID = TM.AffiliateID AND IVM.ForwarderID = TM.ForwarderID
+	 
+		UNION ALL 
+	
+		SELECT DISTINCT 
+		a = 'H20' + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.ETDVendor), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.ETDPort), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.ETAPort), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.ETAFactory), 112) + 
+		CONVERT(CHAR(20), 'JAKARTA') + 
+		CONVERT(CHAR(20), ISNULL(TM.DestinationPort, '')), 
+		INVOICENO = IVM.ShippingInstructionNo, 
+		AFFILIATEID = IVM.AffiliateID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 3 
+		FROM ShippingInstruction_Master IVM 
+		LEFT JOIN Tally_Master TM ON IVM.ShippingInstructionNo = TM.ShippingInstructionNo AND IVM.AffiliateID = TM.AffiliateID AND IVM.ForwarderID = TM.ForwarderID
+
+		UNION ALL 
+
+		SELECT DISTINCT 
+		a = 'H30' + 
+		CONVERT(CHAR(8), '') + 
+		CONVERT(CHAR(15), SUBSTRING(RTRIM(IVM.ShippingInstructionNo),1,10)) + 
+		CONVERT(CHAR(15), ISNULL(RTRIM(IVM.BLNo), '')) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.ETDVendor), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.ShippingInstructionDate), 112) + 
+		CONVERT(CHAR(5), RTRIM(ISNULL(MP.[Description], ''))) + 
+		CONVERT(CHAR(1), IVM.Freight) + 'C' + 
+		CONVERT(CHAR(4), YEAR(GETDATE())) + '0' + 
+		CONVERT(CHAR(6), ''), 
+		INVOICENO = IVM.ShippingInstructionNo, 
+		AFFILIATEID = IVM.AffiliateID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 4 
+		FROM ShippingInstruction_Master IVM
+		LEFT JOIN MS_PriceCls MP ON IVM.TermDelivery = MP.PriceCls 
+
+		UNION ALL 
+	
+		SELECT DISTINCT 
+		a = 'H40' + 
+		RIGHT(RTRIM('000000000000000' + CONVERT(CHAR(15), REPLACE(CONVERT(NUMERIC(32, 5), PR.TotalAmount),'.',''))), 15) + 
+		CONVERT(CHAR(6), RIGHT('000000' + CAST(IVM.TotalPallet AS VARCHAR), 6)) + 
+		CONVERT(CHAR(8), RTRIM(AFI.ConsigneeCode)) + 
+		CONVERT(CHAR(8), RTRIM(AFI.ConsigneeCode)) + 
+		CONVERT(CHAR(8), RTRIM(AFI.ConsigneeCode)) + 
+		RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), REPLACE(CONVERT(NUMERIC(32, 2), SUM((IVD.ShippingQty / MOQ ) * (ISNULL(MPM.NetWeight, 0) / 1000 ))),'.',''))), 9) + 
+		RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), REPLACE(CONVERT(NUMERIC(32, 2), ISNULL(TM.Gross, 0)),'.',''))), 9) + ' ' + '0000' + 
+		CONVERT(CHAR(4), RIGHT('0000' + CAST(TM.TotalCarton AS VARCHAR), 4)), 
+		INVOICENO = IVM.ShippingInstructionNo, 
+		AFFILIATEID = IVM.AffiliateID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 5 
+		FROM ShippingInstruction_Master IVM 
+		INNER JOIN MS_Affiliate AFI ON IVM.AffiliateID = AFI.AffiliateID
+		LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID 
+		LEFT JOIN(
+			SELECT a.ShippingInstructionNo, a.AffiliateID, a.ForwarderID, SUM(ShippingQty * ISNULL(b.price,0)) TotalAmount
+			FROM ShippingInstruction_Detail a 
+			INNER JOIN ShippingInstruction_Master c ON a.ShippingInstructionNo = c.ShippingInstructionNo AND a.AffiliateID = c.AffiliateID AND a.ForwarderID = c.ForwarderID
+			LEFT JOIN MS_Price b ON a.PartNo = b.Partno AND a.AffiliateID = b.AffiliateID AND b.CurrCls = '02' AND (c.ETDPort BETWEEN b.StartDate AND b.EndDate) 
+			GROUP BY a.ShippingInstructionNo, a.AffiliateID, a.ForwarderID
+		)PR ON PR.ShippingInstructionNo = IVM.ShippingInstructionNo AND PR.AffiliateID = IVM.AffiliateID AND PR.ForwarderID = IVM.ForwarderID 
+		LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+		LEFT JOIN MS_PartMapping MPM ON MPM.AffiliateID = IVD.AffiliateID AND MPM.PartNo = IVD.PartNo
+		LEFT JOIN Tally_Master TM ON IVM.ShippingInstructionNo = TM.ShippingInstructionNo AND IVM.AffiliateID = TM.AffiliateID AND IVM.ForwarderID = TM.ForwarderID
+		GROUP BY IVM.ShippingInstructionNo, IVM.AffiliateID, AFI.ConsigneeCode, PR.TotalAmount, TM.Gross, IVM.TotalPallet, TM.TotalCarton
+
+		-------------- DETAIL ------------------ 
+		UNION ALL 
+
+		SELECT DISTINCT * 
+		FROM(
+			SELECT a = 'D10' + 
+			CONVERT(CHAR(25), IVD.PartNo) + 
+			CONVERT(CHAR(3), '') + 
+			CONVERT(CHAR(2), '') + 
+			RIGHT(RTRIM('000000000000000' + CONVERT(CHAR(15), REPLACE(CONVERT(NUMERIC(32, 5), PR.InvPrice),'.',''))), 15) + 'USD' + 
+			UPPER(CONVERT(CHAR(3), MU.[Description])) + 
+			RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), REPLACE(CONVERT(NUMERIC(9, 0), IVD.BoxQty),'.',''))), 9) +
+			CONVERT(CHAR(1), '') + 
+			CONVERT(CHAR(11), ''), 
+			INVOICENO = IVM.ShippingInstructionNo, 
+			AFFILIATEID = IVM.AffiliateID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.OrderNo + IVD.SuratJalanNo, 
+			IDX = 6 
+			FROM ShippingInstruction_Master IVM 
+			INNER JOIN MS_Affiliate AFI ON IVM.AffiliateID = AFI.AffiliateID
+			LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID 
+			LEFT JOIN (
+				SELECT a.OrderNo, a.ShippingInstructionNo, a.AffiliateID, a.ForwarderID, a.PartNo, ISNULL(b.Price,0) InvPrice
+				FROM ShippingInstruction_Detail a
+				INNER JOIN ShippingInstruction_Master c ON a.ShippingInstructionNo = c.ShippingInstructionNo AND a.AffiliateID = c.AffiliateID AND a.ForwarderID = c.ForwarderID
+				LEFT JOIN MS_Price b ON a.PartNo = b.Partno AND a.AffiliateID = b.AffiliateID AND b.CurrCls = '02' AND (c.ETDPort BETWEEN b.StartDate AND b.EndDate)
+			)PR ON PR.ShippingInstructionNo = IVM.ShippingInstructionNo AND PR.AffiliateID = IVM.AffiliateID AND PR.ForwarderID = IVM.ForwarderID AND IVD.PartNo = PR.PartNo AND PR.OrderNo = IVD.OrderNo 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_PartMapping MPM ON MPM.AffiliateID = IVD.AffiliateID AND MPM.PartNo = IVD.PartNo
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+
+			UNION ALL 
+
+			SELECT a = 'D11' +
+			CONVERT(CHAR(30), MP.PartGroupName) + 
+			CONVERT(CHAR(25), '') + 
+			CONVERT(CHAR(3), 'EA') + 
+			CONVERT(CHAR(4), CASE WHEN ISNULL(POM.ShipCls, '') = 'A' THEN CONVERT(CHAR(4), 'CTNS') ELSE CONVERT(CHAR(4), 'PLT') END) + 
+			CONVERT(CHAR(10), ''), 
+			INVOICENO = IVM.ShippingInstructionNo, 
+			AFFILIATEID = IVM.AffiliateID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.OrderNo + IVD.SuratJalanNo, 
+			IDX = 7 
+			FROM ShippingInstruction_Master IVM 
+			LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN PO_Master_Export POM ON IVD.OrderNo = POM.OrderNo1
+
+			UNION ALL
+
+			SELECT a = 'D12' + 
+			CONVERT(CHAR(3), '360') + 
+			CONVERT(CHAR(9), '') + 
+			CONVERT(CHAR(25), '') + 
+			CONVERT(CHAR(35), ''), 
+			INVOICENO = IVM.ShippingInstructionNo, 
+			AFFILIATEID = IVM.AffiliateID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.OrderNo + IVD.SuratJalanNo, 
+			IDX = 8
+			FROM ShippingInstruction_Master IVM 
+			LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+
+			UNION ALL 
+		
+			SELECT a = 'D20' + 
+			CONVERT(CHAR(15), SUBSTRING(RTRIM(IVD.OrderNo), 1, 10)) + 
+			CONVERT(CHAR(1), '') + 
+			RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), CONVERT(NUMERIC(32, 0), IVD.ShippingQty))), 9) + 
+			RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), CONVERT(NUMERIC(32, 0), IVD.ShippingQty))), 9) + 
+			RIGHT(RTRIM('000000000000000' + CONVERT(CHAR(15), REPLACE(CONVERT(NUMERIC(32, 5), PR.InvAmount),'.',''))), 15) + 
+			CONVERT(CHAR(23), ''), 
+			INVOICENO = IVM.ShippingInstructionNo, 
+			AFFILIATEID = IVM.AffiliateID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.OrderNo + IVD.SuratJalanNo, 
+			IDX = 9 
+			FROM ShippingInstruction_Master IVM 
+			LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID 
+			LEFT JOIN (
+				SELECT a.OrderNo, a.ShippingInstructionNo, a.AffiliateID, a.ForwarderID, a.PartNo, a.ShippingQty * ISNULL(b.price,0) InvAmount
+				FROM ShippingInstruction_Detail a
+				INNER JOIN ShippingInstruction_Master c ON a.ShippingInstructionNo = c.ShippingInstructionNo AND a.AffiliateID = c.AffiliateID AND a.ForwarderID = c.ForwarderID
+				LEFT JOIN MS_Price b ON a.PartNo = b.Partno AND a.AffiliateID = b.AffiliateID AND b.CurrCls = '02' AND (c.ETDPort BETWEEN b.StartDate AND b.EndDate)
+			)PR ON PR.ShippingInstructionNo = IVM.ShippingInstructionNo AND PR.AffiliateID = IVM.AffiliateID AND PR.ForwarderID = IVM.ForwarderID AND IVD.PartNo = PR.PartNo AND PR.OrderNo = IVD.OrderNo 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+
+			UNION ALL 
+
+			SELECT a = 'D30' +
+			CASE
+			WHEN CHARINDEX('-', RTRIM(BoxNo), 1) <> 0 
+			THEN CONVERT(CHAR(8), REPLACE(SUBSTRING(RTRIM(BoxNo), 1, CHARINDEX('-', RTRIM(BoxNo), 1) - 1), LEFT(RTRIM(BoxNo), 2), ''))
+			ELSE CONVERT(CHAR(8), REPLACE(RTRIM(BoxNo), LEFT(RTRIM(BoxNo), 2), ''))
+			END +
+			CASE WHEN CHARINDEX('-', RTRIM(BoxNo), 1) <> 0 
+			THEN CONVERT(CHAR(8), REPLACE(SUBSTRING(RTRIM(BoxNo), CHARINDEX('-', RTRIM(BoxNo), 1) + 1, 9), LEFT(RTRIM(BoxNo), 2), ''))
+			ELSE CONVERT(CHAR(8), REPLACE(RTRIM(BoxNo), LEFT(RTRIM(BoxNo), 2), ''))
+			END + 
+			CONVERT(CHAR(5), LEFT(RTRIM(BoxNo), 2)) + 
+			RIGHT(RTRIM('00000000' + CONVERT(CHAR(8), REPLACE(CONVERT(NUMERIC(32, 3), (ISNULL(MPM.NetWeight, 0) ) / 1000),'.',''))), 8) + 
+			RIGHT(RTRIM('00000000' + CONVERT(CHAR(8), REPLACE(CONVERT(NUMERIC(32, 3), (ISNULL(MPM.GrossWeight, 0) ) / 1000),'.',''))), 8) + 
+			CONVERT(CHAR(3), 'KG') + 
+			CONVERT(CHAR(8), '00000000') + 
+			CONVERT(CHAR(3), '') + 
+			CONVERT(CHAR(8), '00000000') + 
+			CONVERT(CHAR(8), '00000000') + 
+			CONVERT(CHAR(5), ''), 
+			INVOICENO = IVM.ShippingInstructionNo, 
+			AFFILIATEID = IVM.AffiliateID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.OrderNo + IVD.SuratJalanNo, 
+			IDX = 10 
+			FROM ShippingInstruction_Master IVM 
+			LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_PartMapping MPM ON MPM.AffiliateID = IVD.AffiliateID AND MPM.PartNo = IVD.PartNo AND MPM.SupplierID = IVD.SupplierID 
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+
+			UNION ALL 
+		
+			SELECT a = 'D31' + 
+			CONVERT(CHAR(10), '') + 
+			CONVERT(CHAR(10), '') + 
+			RIGHT(RTRIM('0000000' + CONVERT(CHAR(7), REPLACE(CONVERT(NUMERIC(7, 0), IVD.BoxQty),'.00',''))), 7) + 
+			CONVERT(CHAR(10), '') + 
+			CONVERT(CHAR(1), '0') + 
+			CONVERT(CHAR(15), TM.ContainerNo) + 
+			CONVERT(CHAR(19), ''),
+			INVOICENO = IVM.ShippingInstructionNo, 
+			AFFILIATEID = IVM.AffiliateID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.OrderNo + IVD.SuratJalanNo, 
+			IDX = 11 
+			FROM ShippingInstruction_Master IVM 
+			LEFT JOIN ShippingInstruction_Detail IVD ON IVM.ShippingInstructionNo = IVD.ShippingInstructionNo AND IVM.AffiliateID = IVD.AffiliateID AND IVM.ForwarderID = IVD.ForwarderID 
+			LEFT JOIN Tally_Master TM ON IVM.ShippingInstructionNo = TM.ShippingInstructionNo AND IVM.AffiliateID = TM.AffiliateID AND IVM.ForwarderID = TM.ForwarderID
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+		)x 
+
+		-------------- FOOTER -------------------- 
+		UNION ALL
+	 
+		SELECT DISTINCT 
+		a = 'T00' + CONVERT(CHAR(72), ''), 
+		INVOICENO = IVM.ShippingInstructionNo, 
+		AFFILIATEID = IVM.AffiliateID, 
+		PARTNO = 'ZZZZZZZZZZZZZZZZZZZZ', 
+		KANBANNO = 'ZZZZZZZZZZZZZZZZZZZZ', 
+		IDX = 12 
+		FROM ShippingInstruction_Master IVM 
+
+	)xx 
+	WHERE InvoiceNo = @InvoiceNo
+	AND AffiliateID = @AffiliateID
+	ORDER BY PARTNO, KANBANNO, IDX
+
+END
+GO

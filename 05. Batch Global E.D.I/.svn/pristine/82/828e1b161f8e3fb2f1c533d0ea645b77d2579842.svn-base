@@ -1,0 +1,8 @@
+[Setting]
+server= 10.62.212.17
+DatabaseName= PASI_EBWEB2
+User=pasi_admin
+Password=pasi123
+Path = D:\New Folder\PASI\POP3\GetEmail\GetEmail\bin\Debug\inbox
+
+

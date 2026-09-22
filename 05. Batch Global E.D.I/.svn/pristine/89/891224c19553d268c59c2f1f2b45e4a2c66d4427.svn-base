@@ -1,0 +1,9 @@
+DECLARE @InvoiceNo CHAR(20)
+DECLARE @AffiliateID CHAR(20)
+
+SET @InvoiceNo = 'EAYC80089B'
+SET @AffiliateID = 'YC-2'
+
+UPDATE ShippingInstruction_Master SET EDICls = '1'
+WHERE ShippingInstructionNo = @InvoiceNo
+AND AffiliateID = @AffiliateID

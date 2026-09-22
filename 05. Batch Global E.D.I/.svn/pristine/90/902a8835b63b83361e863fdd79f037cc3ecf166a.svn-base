@@ -1,0 +1,317 @@
+/****** Object:  StoredProcedure [dbo].[sp_SendInvoiceEDI_Domestic]    Script Date: 6/26/2018 11:18:26 AM ******/
+DROP PROCEDURE [dbo].[sp_SendInvoiceEDI_Domestic]
+GO
+
+/****** Object:  StoredProcedure [dbo].[sp_SendInvoiceEDI_Domestic]    Script Date: 6/26/2018 11:18:26 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sp_SendInvoiceEDI_Domestic](
+	@InvoiceNo CHAR(20),
+	@AffiliateID CHAR(20)
+)
+AS
+BEGIN
+
+	SELECT * FROM(
+
+		SELECT DISTINCT 
+		a = 'H00' + 
+		CONVERT(CHAR(8), 'VD01') + 
+		CONVERT(CHAR(8), '32G8') + 
+		CASE 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'PEMI%' THEN CONVERT(CHAR(8), '32M8') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI T%' THEN CONVERT(CHAR(8), '32M3') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI JF%' THEN CONVERT(CHAR(8), '32CH') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SUAI%' THEN CONVERT(CHAR(8), '32G2') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAI%' THEN CONVERT(CHAR(8), '32M4') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'JAI%' THEN CONVERT(CHAR(8), '32G7') 
+		END +
+		CONVERT(CHAR(8), CONVERT(DATETIME, GETDATE()), 112) +
+		REPLACE(CONVERT (VARCHAR(8), GETDATE(), 108), ':', '') + 
+		CONVERT(CHAR(15), 'INVOICE-DATA') + 
+		CONVERT(CHAR(19), ''), 
+		INVOICENO = IVM.INVOICENO, 
+		AFFILIATEID = IVM.AFFILIATEID,
+		PARTNO = '',
+		KANBANNO = '', 
+		IDX = 1
+		FROM PLPASI_Master IVM 
+		LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+
+		UNION ALL 
+	
+		SELECT DISTINCT 
+		a = 'H10' + '000000' + 'T' + 
+		CONVERT(CHAR(35), 'TRUCK') + 
+		CONVERT(CHAR(10), '') + 
+		CONVERT(CHAR(15), IVM.ContainerNo) + '2' + 
+		CONVERT(CHAR(4), ''),
+		INVOICENO = IVM.INVOICENO, 
+		AFFILIATEID = IVM.AFFILIATEID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 2 
+		FROM PLPASI_Master IVM 
+		LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID
+	 
+		UNION ALL 
+	
+		SELECT DISTINCT 
+		a = 'H20' + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.DeliveryDate), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.DeliveryDate), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.DeliveryDate), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.DeliveryDate), 112) + 
+		CONVERT(CHAR(20), IVM.FromDelivery) + 
+		CONVERT(CHAR(20), IVM.ToDelivery), 
+		INVOICENO = IVM.INVOICENO, 
+		AFFILIATEID = IVM.AFFILIATEID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 3 
+		FROM PLPASI_Master IVM 
+		LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+
+		UNION ALL 
+
+		SELECT DISTINCT 
+		a = 'H30' + 
+		CONVERT(CHAR(8), '') + 
+		CONVERT(CHAR(15), SUBSTRING(RTRIM(IVM.InvoiceNo),1,10)) + 
+		CONVERT(CHAR(15), '') + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.DeliveryDate), 112) + 
+		CONVERT(CHAR(8), CONVERT(DATETIME, IVM.DeliveryDate), 112) + 
+		CONVERT(CHAR(5), 'FOB') + 'C' + 'C' + 
+		CONVERT(CHAR(4), YEAR(GETDATE())) + '0' + 
+		CONVERT(CHAR(6), ''), 
+		INVOICENO = IVM.INVOICENO, 
+		AFFILIATEID = IVM.AFFILIATEID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 4 
+		FROM PLPASI_Master IVM 
+
+		UNION ALL 
+	
+		SELECT DISTINCT 
+		a = 'H40' + 
+		RIGHT(RTRIM('000000000000000' + CONVERT(CHAR(15), REPLACE(CONVERT(NUMERIC(32, 5), PR.TotalAmount),'.',''))), 15) + 
+		CONVERT(CHAR(6), '000000') + 
+		CASE 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'PEMI%' THEN CONVERT(CHAR(8), '32M8') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI T%' THEN CONVERT(CHAR(8), '32M3') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI JF%' THEN CONVERT(CHAR(8), '32CH') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SUAI%' THEN CONVERT(CHAR(8), '32G2') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAI%' THEN CONVERT(CHAR(8), '32M4') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'JAI%' THEN CONVERT(CHAR(8), '32G7') 
+		END + 
+		CASE 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'PEMI%' THEN CONVERT(CHAR(8), '32M8') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI T%' THEN CONVERT(CHAR(8), '32M3') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI JF%' THEN CONVERT(CHAR(8), '32CH') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SUAI%' THEN CONVERT(CHAR(8), '32G2') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAI%' THEN CONVERT(CHAR(8), '32M4') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'JAI%' THEN CONVERT(CHAR(8), '32G7') 
+		END + 
+		CASE 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'PEMI%' THEN CONVERT(CHAR(8), '32M8') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI T%' THEN CONVERT(CHAR(8), '32M3') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI JF%' THEN CONVERT(CHAR(8), '32CH') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SUAI%' THEN CONVERT(CHAR(8), '32G2') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'SAI%' THEN CONVERT(CHAR(8), '32M4') 
+		WHEN RTRIM(IVM.AffiliateID) LIKE 'JAI%' THEN CONVERT(CHAR(8), '32G7') 
+		END + 
+		RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), REPLACE(CONVERT(NUMERIC(32, 2), SUM((IVD.DOQty / MOQ ) * (netweight / 1000 ))),'.',''))), 9) + 
+		RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), REPLACE(CONVERT(NUMERIC(32, 2), SUM((IVD.DOQty / MOQ ) * (Grossweight / 1000 ))),'.',''))), 9) + ' ' + '0000' + '0000', 
+		INVOICENO = IVM.INVOICENO, 
+		AFFILIATEID = IVM.AFFILIATEID, 
+		PARTNO = '', 
+		KANBANNO = '', 
+		IDX = 5 
+		FROM PLPASI_Master IVM 
+		LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+		LEFT JOIN(
+			SELECT a.SuratJalanNo, a.AffiliateID, SUM(DOQty * ISNULL(b.price,0)) TotalAmount
+			FROM PLPASI_Detail a 
+			INNER JOIN PLPASI_Master c ON a.SuratJalanNo = c.SuratJalanNo AND a.AffiliateID = c.AffiliateID 
+			LEFT JOIN MS_Price b ON a.PartNo = b.Partno AND a.AffiliateID = b.AffiliateID AND b.CurrCls = '03' AND (c.DeliveryDate BETWEEN b.StartDate AND b.EndDate) 
+			GROUP BY a.SuratJalanNo, a.AffiliateID 
+		)PR ON PR.SuratJalanNo = IVM.SuratJalanNo AND PR.AffiliateID = IVM.AffiliateID 
+		LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+		LEFT JOIN MS_PartMapping MPM ON MPM.AffiliateID = IVD.AffiliateID AND MPM.PartNo = IVD.PartNo
+		GROUP BY IVM.INVOICENO, IVM.AFFILIATEID, PR.TotalAmount, IVM.affiliateID 
+
+		-------------- DETAIL ------------------ 
+		UNION ALL 
+
+		SELECT DISTINCT * 
+		FROM(
+			SELECT a = 'D10' + 
+			CONVERT(CHAR(25), IVD.PartNo) + 
+			CONVERT(CHAR(3), '') + 
+			CONVERT(CHAR(2), '') + 
+			RIGHT(RTRIM('000000000000000' + CONVERT(CHAR(15), REPLACE(CONVERT(NUMERIC(32, 5), PR.InvPrice),'.',''))), 15) +
+			CASE 
+			WHEN RTRIM(IVM.AffiliateID) LIKE 'PEMI%' THEN 'IDR' 
+			WHEN RTRIM(IVM.AffiliateID) LIKE 'SAMI%' THEN 'IDR' 
+			WHEN RTRIM(IVM.AffiliateID) LIKE 'SAI%' THEN 'IDR'
+			WHEN RTRIM(IVM.AffiliateID) LIKE 'SUAI%' THEN 'IDR' 
+			WHEN RTRIM(IVM.AffiliateID) LIKE 'JAI%' THEN 'IDR' 
+			END + 
+			UPPER(CONVERT(char(3), MU.Description)) + 
+			RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), REPLACE(CONVERT(NUMERIC(9, 0), QtyBox),'.',''))), 9) +
+			CONVERT(CHAR(1), '') + 
+			CONVERT(CHAR(11), ''), 
+			INVOICENO = IVM.INVOICENO, 
+			AFFILIATEID = IVM.AFFILIATEID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.KANBANNO, 
+			IDX = 6 
+			FROM PLPASI_Master IVM 
+			LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+			LEFT JOIN (
+				SELECT a.PONO, a.SuratJalanNo, a.AffiliateID, a.PartNo, ISNULL(b.price,0) InvPrice
+				FROM PLPASI_Detail a
+				INNER JOIN PLPASI_Master c ON a.SuratJalanNo = c.SuratJalanNo AND a.AffiliateID = c.AffiliateID
+				LEFT JOIN MS_Price b ON a.PartNo = b.Partno AND a.AffiliateID = b.AffiliateID AND b.CurrCls = '03' AND (c.DeliveryDate BETWEEN b.StartDate AND b.EndDate)
+			)PR ON PR.SuratJalanNo = IVM.SuratJalanNo AND PR.AffiliateID = IVM.AffiliateID AND IVD.PartNo = PR.PartNo AND PR.PONo = IVD.PONo 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_PartMapping MPM ON MPM.AffiliateID = IVD.AffiliateID AND MPM.PartNo = IVD.PartNo
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+
+			UNION ALL 
+
+			SELECT a = 'D11' +
+			CONVERT(CHAR(30), MP.PartName) + 
+			CONVERT(CHAR(25), '') + 
+			CONVERT(CHAR(3), 'EA') + 
+			CONVERT(CHAR(4), 'PLT') + 
+			CONVERT(CHAR(10), ''), 
+			INVOICENO = IVM.INVOICENO, 
+			AFFILIATEID = IVM.AFFILIATEID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.KANBANNO, 
+			IDX = 7 
+			FROM PLPASI_Master IVM 
+			LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+
+			UNION ALL
+
+			SELECT a = 'D12' + 
+			CONVERT(CHAR(3), '360') + 
+			CONVERT(CHAR(9), '') + 
+			CONVERT(CHAR(25), '') + 
+			CONVERT(CHAR(35), ''), 
+			INVOICENO = IVM.INVOICENO, 
+			AFFILIATEID = IVM.AFFILIATEID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.KANBANNO, 
+			IDX = 8
+			FROM PLPASI_Master IVM 
+			LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+
+			UNION ALL 
+		
+			SELECT a = 'D20' + 
+			CONVERT(CHAR(15), SUBSTRING(RTRIM(IVD.PONo),1,10)) + 
+			CONVERT(CHAR(1), '') + 
+			RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), CONVERT(NUMERIC(32, 0), IVD.DOQty))), 9) + 
+			RIGHT(RTRIM('000000000' + CONVERT(CHAR(9), CONVERT(NUMERIC(32, 0), IVD.DOQty))), 9) + 
+			RIGHT(RTRIM('000000000000000' + CONVERT(CHAR(15), REPLACE(CONVERT(NUMERIC(32, 5), PR.InvAmount),'.',''))), 15) + 
+			CONVERT(CHAR(23), ''), 
+			INVOICENO = IVM.INVOICENO, 
+			AFFILIATEID = IVM.AFFILIATEID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.KANBANNO, 
+			IDX = 9 
+			FROM PLPASI_Master IVM 
+			LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+			LEFT JOIN (
+				SELECT a.PONO, a.SuratJalanNo, a.AffiliateID, a.PartNo, a.DOQty * ISNULL(b.price,0) InvAmount
+				FROM PLPASI_Detail a
+				INNER JOIN PLPASI_Master c ON a.SuratJalanNo = c.SuratJalanNo AND a.AffiliateID = c.AffiliateID
+				LEFT JOIN MS_Price b ON a.PartNo = b.Partno AND a.AffiliateID = b.AffiliateID AND b.CurrCls = '03' AND (c.DeliveryDate BETWEEN b.StartDate AND b.EndDate)
+			)PR ON PR.SuratJalanNo = IVM.SuratJalanNo AND PR.AffiliateID = IVM.AffiliateID AND IVD.PartNo = PR.PartNo AND PR.PONo = IVD.PONo 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+
+			UNION ALL 
+
+			SELECT a = 'D30' + 
+			CASE
+			WHEN CHARINDEX('-', RTRIM(CartonNo), 1) <> 0 
+			THEN CONVERT(CHAR(8), RIGHT('00000000' + REPLACE(SUBSTRING(RTRIM(CartonNo), 1, CHARINDEX('-', RTRIM(CartonNo), 1) - 1),LEFT(CartonNo,1),''),8)) 
+			ELSE RIGHT(RTRIM('00000000' + CONVERT(CHAR(8), REPLACE(CartonNo, LEFT(CartonNo,1),''))), 8)
+			END +
+			CASE WHEN CHARINDEX('-', RTRIM(CartonNo), 1) <> 0 
+			THEN CONVERT(CHAR(8), RIGHT('00000000' + REPLACE(SUBSTRING(RTRIM(CartonNo), CHARINDEX('-', RTRIM(CartonNo), 1) + 1, LEN(RTRIM(CartonNo)) + 1), LEFT(CartonNo,1),''),8))
+			ELSE RIGHT(RTRIM('00000000' + CONVERT(CHAR(8), REPLACE(CartonNo,'C',''))), 8) 
+			END + 
+			CONVERT(CHAR(5), 
+			LEFT(CartonNo,1)) + 
+			RIGHT(RTRIM('00000000' + CONVERT(CHAR(8), REPLACE(CONVERT(NUMERIC(32, 3), (ISNULL(NetWeight, 0) ) / 1000),'.',''))), 8) + 
+			RIGHT(RTRIM('00000000' + CONVERT(CHAR(8), REPLACE(CONVERT(NUMERIC(32, 3), (ISNULL(GrossWeight, 0) ) / 1000),'.',''))), 8) + 
+			CONVERT(CHAR(3),
+			UPPER(MU.Description)) + 
+			CONVERT(CHAR(8), '00000000') + 
+			CONVERT(CHAR(3), '') + 
+			CONVERT(CHAR(8), '00000000') + 
+			CONVERT(CHAR(8), '00000000') + 
+			CONVERT(CHAR(5), ''), 
+			INVOICENO = IVM.INVOICENO, 
+			AFFILIATEID = IVM.AFFILIATEID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.KANBANNO, 
+			IDX = 10 
+			FROM PLPASI_Master IVM 
+			LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_PartMapping MPM ON MPM.AffiliateID = IVD.AffiliateID AND MPM.PartNo = IVD.PartNo AND MPM.SupplierID = IVD.SupplierID 
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+
+			UNION ALL 
+		
+			SELECT a = 'D31' + 
+			CONVERT(CHAR(10), '') + 
+			CONVERT(CHAR(10), '') + 
+			RIGHT(RTRIM('0000000' + CONVERT(CHAR(7), REPLACE(Convert(numeric(7,0),IVD.CartonQty),'.00',''))), 7) + 
+			CONVERT(CHAR(10), '') + 
+			CONVERT(CHAR(1), '0') + 
+			CONVERT(CHAR(15), '') + 
+			CONVERT(CHAR(19), ''),
+			INVOICENO = IVM.INVOICENO, 
+			AFFILIATEID = IVM.AFFILIATEID, 
+			PARTNO = IVD.PartNo, 
+			KANBANNO = IVD.KANBANNO, 
+			IDX = 11 
+			FROM PLPASI_Master IVM 
+			LEFT JOIN PLPASI_Detail IVD ON IVM.SuratJalanNo = IVD.SuratJalanNo AND IVM.AffiliateID = IVD.AffiliateID 
+			LEFT JOIN MS_Parts MP ON MP.PartNo = IVD.PartNo 
+			LEFT JOIN MS_UnitCls MU ON MU.Unitcls = MP.UnitCls 
+		)x 
+
+		-------------- FOOTER -------------------- 
+		UNION ALL
+	 
+		SELECT DISTINCT 
+		a = 'T00' + CONVERT(CHAR(72), ''), 
+		INVOICENO = IVM.INVOICENO, 
+		AFFILIATEID = IVM.AFFILIATEID, 
+		PARTNO = 'ZZZZZZZZZZZZZZZZZZZZ', 
+		KANBANNO = 'ZZZZZZZZZZZZZZZZZZZZ', 
+		IDX = 12 
+		FROM PLPASI_Master IVM 
+
+	)xx 
+	WHERE InvoiceNo = 'DASA70579T'
+	AND AffiliateID = 'SUAI'
+	ORDER BY PARTNO, KANBANNO, IDX
+
+END
+GO
