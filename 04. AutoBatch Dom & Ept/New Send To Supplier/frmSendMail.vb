@@ -7305,7 +7305,7 @@ keluar:
 
         ls_SQL = ls_SQL + "  Qty = RB.Box,  " & vbCrLf & _
                           "  Price = isnull(SHD.Price,ISNULL(MPR.Price,0)),  " & vbCrLf & _
-                          "  Amount = 0,  " & vbCrLf & _
+                          "  Amount = Cast( (isnull(NetWeight,0)/1000) * RB.Box As Numeric(18,2)), --0, -- Dipake Untuk Total Net Weight " & vbCrLf & _
                           "  Net =  (isnull(NetWeight,0)/1000),  " & vbCrLf & _
                           "  Gross =(isnull(SHM.GrossWeight,0)/1000),  " & vbCrLf & _
                           "  DocNo = '',  " & vbCrLf & _
