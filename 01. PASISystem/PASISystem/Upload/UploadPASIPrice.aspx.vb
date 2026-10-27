@@ -284,6 +284,12 @@ EndProcedure:
                                             dtUploadDetail.PackingCls = "03"
                                         ElseIf Trim(dtDetail.Rows(i).Item(2)).ToUpper = "KMT 40" Then
                                             dtUploadDetail.PackingCls = "04"
+                                        ElseIf Trim(dtDetail.Rows(i).Item(2)).ToUpper = "PAPER BAG" Then
+                                            dtUploadDetail.PackingCls = "05"
+                                        ElseIf Trim(dtDetail.Rows(i).Item(2)).ToUpper = "PE BAG" Then
+                                            dtUploadDetail.PackingCls = "06"
+                                        ElseIf Trim(dtDetail.Rows(i).Item(2)).ToUpper = "BAG" Then
+                                            dtUploadDetail.PackingCls = "07"
                                         Else
                                             dtUploadDetail.PackingCls = ""
                                         End If
@@ -565,6 +571,12 @@ EndProcedure:
                                 tempPackingCls = "03"
                             ElseIf Trim(grid.GetRowValues(i, "PackingCls")).ToUpper = "KMT 40" Then
                                 tempPackingCls = "04"
+                            ElseIf Trim(grid.GetRowValues(i, "PackingCls")).ToUpper = "PAPER BAG" Then
+                                tempPackingCls = "05"
+                            ElseIf Trim(grid.GetRowValues(i, "PackingCls")).ToUpper = "PE BAG" Then
+                                tempPackingCls = "06"
+                            ElseIf Trim(grid.GetRowValues(i, "PackingCls")).ToUpper = "BAG" Then
+                                tempPackingCls = "07"
                             End If
                         Else
                             tempPackingCls = ""
