@@ -148,18 +148,18 @@ Partial Public Class LabelExport
         Me.XrBarCode3.Borders = DevExpress.XtraPrinting.BorderSide.None
         Me.XrBarCode3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "CustomSqlQuery.BarcodePart")})
         Me.XrBarCode3.Font = New System.Drawing.Font("Tahoma", 1.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrBarCode3.LocationFloat = New DevExpress.Utils.PointFloat(414.1252!, 60.0!)
+        Me.XrBarCode3.LocationFloat = New DevExpress.Utils.PointFloat(295.0!, 55.0!)
         Me.XrBarCode3.Module = 128.0!
         Me.XrBarCode3.Name = "XrBarCode3"
         Me.XrBarCode3.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100.0!)
         Me.XrBarCode3.ShowText = False
-        Me.XrBarCode3.SizeF = New System.Drawing.SizeF(144.0001!, 69.99997!)
+        Me.XrBarCode3.SizeF = New System.Drawing.SizeF(264.0!, 34.12035!)
         Me.XrBarCode3.StylePriority.UseBorders = False
         Me.XrBarCode3.StylePriority.UsePadding = False
         Me.XrBarCode3.StylePriority.UseTextAlignment = False
         Code128Generator2.CharacterSet = DevExpress.XtraPrinting.BarCode.Code128Charset.CharsetAuto
         Me.XrBarCode3.Symbology = Code128Generator2
-        Me.XrBarCode3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
+        Me.XrBarCode3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
         '
         'XrBarCode2
         '
@@ -280,10 +280,10 @@ Partial Public Class LabelExport
         Me.XrLabel14.CanGrow = False
         Me.XrLabel14.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "CustomSqlQuery.PartNo3")})
         Me.XrLabel14.Font = New System.Drawing.Font("Calibri Light", 18.0!)
-        Me.XrLabel14.LocationFloat = New DevExpress.Utils.PointFloat(328.56!, 69.37!)
+        Me.XrLabel14.LocationFloat = New DevExpress.Utils.PointFloat(328.56!, 101.7774!)
         Me.XrLabel14.Name = "XrLabel14"
         Me.XrLabel14.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel14.SizeF = New System.Drawing.SizeF(85.56387!, 67.88!)
+        Me.XrLabel14.SizeF = New System.Drawing.SizeF(85.5639!, 35.4726!)
         Me.XrLabel14.StylePriority.UseFont = False
         Me.XrLabel14.StylePriority.UseTextAlignment = False
         Me.XrLabel14.Text = "XrLabel14"
@@ -370,10 +370,10 @@ Partial Public Class LabelExport
         Me.XrLabel5.CanGrow = False
         Me.XrLabel5.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "CustomSqlQuery.PartNo2")})
         Me.XrLabel5.Font = New System.Drawing.Font("Calibri", 27.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(168.4785!, 75.00001!)
+        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(168.4785!, 85.0!)
         Me.XrLabel5.Name = "XrLabel5"
         Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel5.SizeF = New System.Drawing.SizeF(160.0814!, 59.37492!)
+        Me.XrLabel5.SizeF = New System.Drawing.SizeF(160.0814!, 48.0!)
         Me.XrLabel5.StylePriority.UseFont = False
         Me.XrLabel5.StylePriority.UseTextAlignment = False
         Me.XrLabel5.Text = "XrLabel5"
@@ -384,10 +384,10 @@ Partial Public Class LabelExport
         Me.XrLabel7.CanGrow = False
         Me.XrLabel7.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "CustomSqlQuery.PartNo1")})
         Me.XrLabel7.Font = New System.Drawing.Font("Calibri Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(136.4785!, 69.37494!)
+        Me.XrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(136.4785!, 101.7774!)
         Me.XrLabel7.Name = "XrLabel7"
         Me.XrLabel7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel7.SizeF = New System.Drawing.SizeF(32.0!, 67.87999!)
+        Me.XrLabel7.SizeF = New System.Drawing.SizeF(32.0!, 35.47752!)
         Me.XrLabel7.StylePriority.UseFont = False
         Me.XrLabel7.StylePriority.UseTextAlignment = False
         Me.XrLabel7.Text = "XrLabel7"
@@ -432,10 +432,10 @@ Partial Public Class LabelExport
         Me.XrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.None
         Me.XrLabel8.CanGrow = False
         Me.XrLabel8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(136.4785!, 54.37495!)
+        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(136.4785!, 54.37494!)
         Me.XrLabel8.Name = "XrLabel8"
         Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel8.SizeF = New System.Drawing.SizeF(156.8!, 15.0!)
+        Me.XrLabel8.SizeF = New System.Drawing.SizeF(61.4875!, 15.00001!)
         Me.XrLabel8.StylePriority.UseBorders = False
         Me.XrLabel8.StylePriority.UseFont = False
         Me.XrLabel8.StylePriority.UseTextAlignment = False
@@ -485,14 +485,14 @@ Partial Public Class LabelExport
         '
         'TopMargin
         '
-        Me.TopMargin.HeightF = 0!
+        Me.TopMargin.HeightF = 0.0!
         Me.TopMargin.Name = "TopMargin"
         Me.TopMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         Me.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'BottomMargin
         '
-        Me.BottomMargin.HeightF = 0!
+        Me.BottomMargin.HeightF = 0.0!
         Me.BottomMargin.Name = "BottomMargin"
         Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -506,7 +506,7 @@ Partial Public Class LabelExport
         '
         'PageHeaderBand1
         '
-        Me.PageHeaderBand1.HeightF = 0!
+        Me.PageHeaderBand1.HeightF = 0.0!
         Me.PageHeaderBand1.Name = "PageHeaderBand1"
         '
         'PageFooterBand1
@@ -518,7 +518,7 @@ Partial Public Class LabelExport
         'ReportHeaderBand1
         '
         Me.ReportHeaderBand1.Expanded = False
-        Me.ReportHeaderBand1.HeightF = 0!
+        Me.ReportHeaderBand1.HeightF = 0.0!
         Me.ReportHeaderBand1.Name = "ReportHeaderBand1"
         '
         'Title
