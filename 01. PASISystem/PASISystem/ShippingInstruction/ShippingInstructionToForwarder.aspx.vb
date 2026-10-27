@@ -113,7 +113,8 @@ Public Class ShippingInstructionToForwarder
                         Call up_GridLoad()
                         'Call up_GridLoadCreate()
 
-                        ls_GenerateNo = CreateInvoiceNo(Session("SHAFFILIATEID"), pShipCode)
+                        'ls_GenerateNo = CreateInvoiceNo(Session("SHAFFILIATEID"), pShipCode)
+                        ls_GenerateNo = CreateInvoiceNo(Session("SHAFFILIATEID"), Now.ToString("yyyy-MM-dd"))
                         cboShippingNo.Text = ls_GenerateNo
 
                         'cboAffiliateCode.Enabled = False
@@ -502,7 +503,8 @@ Public Class ShippingInstructionToForwarder
                           "     pallet = isnull(SIM.TotalPallet,0),  " & vbCrLf & _
                           "     Box = isnull(SUM(SD.ShippingQty/ISNULL(SD.POQtyBox,MPM.QtyBox)),0),  " & vbCrLf & _
                           "     Qty = SUM(isnull(SD.ShippingQty,0)),  " & vbCrLf & _
-                          "     beratBersih = SUM(((netweight/ISNULL(SD.POQtyBox,MPM.QtyBox))* SD.ShippingQty)/1000),             " & vbCrLf & _
+                          "     --beratBersih = SUM(((netweight/ISNULL(SD.POQtyBox,MPM.QtyBox))* SD.ShippingQty)/1000),             " & vbCrLf & _
+                          "     beratBersih = SUM( cast((ISNULL(NetWeight, 0) / 1000 ) * RB.Box As Numeric(18,2))), " & vbCrLf & _
                           "     beratKotor = ISNULl(SIM.GrossWeight,0),  " & vbCrLf & _
                           "     Buyer = Rtrim(BuyerName),             " & vbCrLf & _
                           "     BuyerAddress = Rtrim(BuyerAddress),   " & vbCrLf & _
@@ -523,6 +525,8 @@ Public Class ShippingInstructionToForwarder
 
         ls_sql = ls_sql + "          				and MPM.SupplierID = SD.SupplierID   " & vbCrLf & _
                           "                         and MPM.AffiliateID = SD.AffiliateID  " & vbCrLf & _
+                          "                     LEFT JOIN ReceiveForwarder_DetailBox RB on RB.SuratJalanNo = SD.SuratJalanNo and RB.AffiliateID = SD.AffiliateID " & vbCrLf & _
+                          "                          AND RB.SupplierID = SD.SupplierID and RB.OrderNo = SD.OrderNo and RB.PartNo = SD.PartNo " & vbCrLf & _
                           "                           WHERE SIM.ShippingInstructionNo = '" & Trim(cboShippingNo.Text) & "'  " & vbCrLf & _
                           "                           AND SIM.AffiliateID = '" & Trim(cboAffiliateCode.Text) & "' " & vbCrLf & _
                           "                           AND SIM.ForwarderID = '" & Trim(cboForwarder.Text) & "'  " & vbCrLf & _
@@ -605,7 +609,7 @@ Public Class ShippingInstructionToForwarder
 
         ls_sql = ls_sql + "  Qty = RB.Box, --td2.Qty,  " & vbCrLf & _
                           "  Price = isnull(SHD.Price,MPR.Price) + '.0000' ,   " & vbCrLf & _
-                          "  Amount = 0,  " & vbCrLf & _
+                          "  Amount = Cast( (isnull(NetWeight,0)/1000) * RB.Box As Numeric(18,2)), --0, -- Dipake Untuk Total Net Weight " & vbCrLf & _
                           "  Net =  (isnull(NetWeight,0)/1000),  " & vbCrLf & _
                           "  Gross =(isnull(SHM.GrossWeight,0)),  " & vbCrLf & _
                           "  DocNo = '',  " & vbCrLf & _
@@ -783,7 +787,7 @@ Public Class ShippingInstructionToForwarder
         End Using
     End Sub
 
-    Private Function CreateInvoiceNo(ByVal pAffiliateID As String, ByVal pShipby As String) As String
+    Private Function CreateInvoiceNo_20260410(ByVal pAffiliateID As String, ByVal pShipby As String) As String
         Dim ls_sql As String = ""
         Dim ls_Sfx As String = ""
         Dim ls_SeqNo As String = ""
@@ -820,7 +824,30 @@ Public Class ShippingInstructionToForwarder
                 Else
                     ls_Sfx = ""
                 End If
-                CreateInvoiceNo = ls_Sfx + ls_Year + ls_SeqNo + pShipby
+                CreateInvoiceNo_20260410 = ls_Sfx + ls_Year + ls_SeqNo + pShipby
+            End Using
+        End Using
+    End Function
+
+    Private Function CreateInvoiceNo(ByVal pAffiliateID As String, ByVal pShipDate As String) As String
+        Dim ls_sql As String = ""
+
+        Using sqlConn As New SqlConnection(clsGlobal.ConnectionString)
+            sqlConn.Open()
+            Using sqlTran As SqlTransaction = sqlConn.BeginTransaction("CreateShippInsNo")
+                ls_sql = "sp_ShippingInstruction_GenerateInvoiceNo"
+
+                Dim sqlCmd2 As New SqlCommand(ls_sql, sqlConn, sqlTran)
+                sqlCmd2.CommandType = CommandType.StoredProcedure
+
+                sqlCmd2.Parameters.AddWithValue("Affiliate", pAffiliateID)
+                sqlCmd2.Parameters.AddWithValue("Ship_Date", pShipDate)
+
+                Dim sqlDA2 As New SqlDataAdapter(sqlCmd2)
+                Dim dt2 As New DataTable
+                sqlDA2.Fill(dt2)
+
+                CreateInvoiceNo = dt2.Rows(0)("InvoiceNo").ToString()
             End Using
         End Using
     End Function
@@ -1203,6 +1230,7 @@ Public Class ShippingInstructionToForwarder
             ls_SQL = ls_SQL + " 		AND RM.SupplierID = RD.SupplierID    " & vbCrLf & _
                               " 		AND RM.AffiliateID = RD.AffiliateID   " & vbCrLf & _
                               " 		AND RM.PONo = RD.PONo   " & vbCrLf & _
+                              " 		AND RM.OrderNo = RD.OrderNo   " & vbCrLf & _
                               " 	LEFT JOIN dbo.MS_Parts MP ON RD.PartNo = MP.PartNo   " & vbCrLf & _
                               " 	LEFT JOIN ReceiveForwarder_DetailBox RB ON RB.SuratJalanNo = RD.SuratJalanNo  " & vbCrLf & _
                               " 		AND RB.SupplierID = RD.SupplierID   " & vbCrLf & _
