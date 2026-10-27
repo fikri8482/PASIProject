@@ -85,6 +85,7 @@ Public Class HistoricalMonthlyForecast
             " " & vbCrLf & _
             "var PeriodTo = new Date(); " & vbCrLf & _
             "dtPOPeriod.SetDate(PeriodTo); " & vbCrLf & _
+            "dtPOPeriodTo.SetDate(PeriodTo); " & vbCrLf & _
             "lblInfo.SetText(''); "
 
         '"if (cboSupplier.GetItemCount() > 1) { " & vbCrLf & _
@@ -95,7 +96,34 @@ Public Class HistoricalMonthlyForecast
         ScriptManager.RegisterStartupScript(dtPOPeriod, dtPOPeriod.GetType(), "Initialize", script, True)
     End Sub
 
-    Private Function GetHeaderBandGrid(pPeriod As String, ByVal pConStr As String, Optional ByRef pErr As String = "") As DataTable
+    'Private Function GetHeaderBandGrid(pPeriod As String, ByVal pConStr As String, Optional ByRef pErr As String = "") As DataTable
+    '    Dim cmd As SqlCommand
+    '    Dim da As SqlDataAdapter
+    '    Dim dt As New DataTable
+    '    Dim sql As String
+    '    Try
+    '        Using con = New SqlConnection(pConStr)
+    '            con.Open()
+    '            'sql = "SELECT SeqNo,Nama FROM dbo.fn_GetMonthYear('" & pPeriod & "') A "
+    '            sql = "sp_HistoricalMonthlyForecast_Select_GetHeaderBandGrid"
+
+    '            cmd = New SqlCommand
+    '            cmd.Parameters.AddWithValue("Period", pPeriod)
+    '            cmd.CommandText = sql
+    '            cmd.Connection = con
+    '            cmd.CommandType = CommandType.StoredProcedure
+
+    '            da = New SqlDataAdapter(cmd)
+    '            da.Fill(dt)
+    '            cmd.Dispose()
+    '        End Using
+    '        Return dt
+    '    Catch ex As Exception
+    '        Throw New Exception("Generate Month  --> " & ex.Message)
+    '    End Try
+    'End Function
+
+    Private Function GetHeaderBandGrid_New(ByVal pPeriod As String, ByVal pPeriodEnd As String, ByVal pConStr As String, Optional ByRef pErr As String = "") As DataTable
         Dim cmd As SqlCommand
         Dim da As SqlDataAdapter
         Dim dt As New DataTable
@@ -104,10 +132,11 @@ Public Class HistoricalMonthlyForecast
             Using con = New SqlConnection(pConStr)
                 con.Open()
                 'sql = "SELECT SeqNo,Nama FROM dbo.fn_GetMonthYear('" & pPeriod & "') A "
-                sql = "sp_HistoricalMonthlyForecast_Select_GetHeaderBandGrid"
+                sql = "sp_HistoricalMonthlyForecast_Select_GetHeaderBandGrid_New"
 
                 cmd = New SqlCommand
                 cmd.Parameters.AddWithValue("Period", pPeriod)
+                cmd.Parameters.AddWithValue("PeriodEnd", pPeriodEnd)
                 cmd.CommandText = sql
                 cmd.Connection = con
                 cmd.CommandType = CommandType.StoredProcedure
@@ -123,14 +152,58 @@ Public Class HistoricalMonthlyForecast
     End Function
 
 
-    Private Sub up_GridHeader(pPeriod As String)
+    'Private Sub up_GridHeader(pPeriod As String)
+    '    Dim dt As DataTable
+    '    dt = GetHeaderBandGrid(pPeriod, clsGlobal.ConnectionString)
+    '    If dt.Rows.Count > 0 Then
+    '        For i = 0 To dt.Rows.Count - 1
+    '            grid.VisibleColumns(8 + i).Caption = dt.Rows(i).Item("Nama").ToString
+    '        Next
+
+    '    End If
+
+
+    '    '    grid.VisibleColumns(8).Caption = "JUL "
+    '    '    grid.VisibleColumns(9).Caption = "AUG "
+    '    '    grid.VisibleColumns(10).Caption = "SEP "
+    '    '    grid.VisibleColumns(11).Caption = "OCT "
+    '    '    grid.VisibleColumns(12).Caption = "NOV "
+    '    '    grid.VisibleColumns(13).Caption = "DEC "
+
+    '    '    grid.VisibleColumns(14).Caption = "JAN "
+    '    '    grid.VisibleColumns(15).Caption = "FEB "
+    '    '    grid.VisibleColumns(16).Caption = "MAR "
+    '    '    grid.VisibleColumns(17).Caption = "APR "
+    '    '    grid.VisibleColumns(18).Caption = "MAY "
+    '    '    grid.VisibleColumns(19).Caption = "JUN "
+    'End Sub
+
+    Private Sub up_GridHeader_New(ByVal pPeriod As String, ByVal pPeriodEnd As String)
         Dim dt As DataTable
-        dt = GetHeaderBandGrid(pPeriod, clsGlobal.ConnectionString)
+        dt = GetHeaderBandGrid_New(pPeriod, pPeriodEnd, clsGlobal.ConnectionString)
+
+        grid.Columns.Clear()
         If dt.Rows.Count > 0 Then
             For i = 0 To dt.Rows.Count - 1
-                grid.VisibleColumns(8 + i).Caption = dt.Rows(i).Item("Nama").ToString
-            Next
+                Dim gridCol As New GridViewDataTextColumn()
 
+                With gridCol
+                    .FieldName = dt.Rows(i).Item("SeqNo").ToString
+                    .Caption = dt.Rows(i).Item("Nama").ToString
+
+                    .Width = Unit.Pixel(120)
+                    .HeaderStyle.HorizontalAlign = HorizontalAlign.Center
+                    .HeaderStyle.Wrap = DevExpress.Utils.DefaultBoolean.True
+
+                    .CellStyle.Font.Name = "Tahoma"
+                    .CellStyle.Font.Size = FontUnit.Point(8)
+
+                    ' bisa tambah align isi cell
+                    .CellStyle.HorizontalAlign = HorizontalAlign.Center
+                End With
+
+                grid.Columns.Add(gridCol)
+            Next
         End If
 
 
@@ -149,15 +222,39 @@ Public Class HistoricalMonthlyForecast
         '    grid.VisibleColumns(19).Caption = "JUN "
     End Sub
 
-    Private Sub up_GridLoad()
-        up_GridHeader(Format(dtPOPeriod.Value, "yyyyMM") & "01")
+    'Private Sub up_GridLoad()
+    '    up_GridHeader(Format(dtPOPeriod.Value, "yyyyMM") & "01")
+
+    '    Using sqlConn As New SqlConnection(clsGlobal.ConnectionString)
+    '        sqlConn.Open()
+    '        Dim ls_filter As String = ""
+    '        ls_SQL = ""
+
+    '        ls_SQL = "EXEC sp_HistoricalMonthlyForecast_Select '" & (Format(dtPOPeriod.Value, "yyyyMM") & "01") & "','" & cboAffiliateID.Text & "','" & cboSupplier.Text & "', '" & cbopart.Text & "','" & cboRev.Text & "' "
+
+    '        Dim cmd As New SqlCommand(ls_SQL, sqlConn)
+    '        cmd.CommandTimeout = 300
+    '        Dim sqlDA As New SqlDataAdapter
+    '        sqlDA.SelectCommand = cmd
+    '        Dim ds As New DataSet
+    '        sqlDA.SelectCommand.CommandTimeout = 300
+    '        sqlDA.Fill(ds)
+    '        With grid
+    '            .DataSource = ds.Tables(0)
+    '            .DataBind()
+    '        End With
+    '    End Using
+    'End Sub
+
+    Private Sub up_GridLoad_New()
+        up_GridHeader_New(Format(dtPOPeriod.Value, "yyyyMM") & "01", Format(dtPOPeriodTo.Value, "yyyyMM") & "01")
 
         Using sqlConn As New SqlConnection(clsGlobal.ConnectionString)
             sqlConn.Open()
             Dim ls_filter As String = ""
             ls_SQL = ""
 
-            ls_SQL = "EXEC sp_HistoricalMonthlyForecast_Select '" & (Format(dtPOPeriod.Value, "yyyyMM") & "01") & "','" & cboAffiliateID.Text & "','" & cboSupplier.Text & "', '" & cbopart.Text & "','" & cboRev.Text & "' "
+            ls_SQL = "EXEC sp_HistoricalMonthlyForecast_Select_New '" & (Format(dtPOPeriod.Value, "yyyyMM") & "01") & "', '" & (Format(dtPOPeriodTo.Value, "yyyyMM") & "01") & "','" & cboAffiliateID.Text & "','" & cboSupplier.Text & "', '" & cbopart.Text & "','" & cboRev.Text & "' "
 
             Dim cmd As New SqlCommand(ls_SQL, sqlConn)
             cmd.CommandTimeout = 300
@@ -173,7 +270,7 @@ Public Class HistoricalMonthlyForecast
         End Using
     End Sub
 
-    Private Function GetData() As DataSet
+    Private Function GetDataExcel() As DataSet
         Try
 
             Using sqlConn As New SqlConnection(clsGlobal.ConnectionString)
@@ -181,7 +278,7 @@ Public Class HistoricalMonthlyForecast
                 Dim ls_filter As String = ""
                 ls_SQL = ""
 
-                ls_SQL = "EXEC sp_HistoricalMonthlyForecast_Select_Trial '" & (Format(dtPOPeriod.Value, "yyyyMM") & "01") & "','" & cboAffiliateID.Text & "','" & cboSupplier.Text & "', '" & cbopart.Text & "','" & cboRev.Text & "' "
+                ls_SQL = "EXEC sp_HistoricalMonthlyForecast_Select_New '" & (Format(dtPOPeriod.Value, "yyyyMM") & "01") & "', '" & (Format(dtPOPeriodTo.Value, "yyyyMM") & "01") & "','" & cboAffiliateID.Text & "','" & cboSupplier.Text & "', '" & cbopart.Text & "','" & cboRev.Text & "' "
 
                 Dim cmd As New SqlCommand(ls_SQL, sqlConn)
                 cmd.CommandTimeout = 300
@@ -523,7 +620,12 @@ Public Class HistoricalMonthlyForecast
             .Column(7).Width = 15
             .Column(8).Width = 28
             .Column(9).Width = 12
-            .Column(10).Width = 12 '1
+
+            For i = 1 To ds.Tables(0).Columns.Count() - 14
+                .Column(9 + i).Width = 12
+            Next
+
+            '.Column(10).Width = 12 '1
             '.Column(11).Width = 12 '2
             '.Column(12).Width = 12 '3
             '.Column(13).Width = 12 '4
@@ -536,13 +638,13 @@ Public Class HistoricalMonthlyForecast
             '.Column(20).Width = 12 '11
             '.Column(21).Width = 12 '12
 
-            Dim rgAll As ExcelRange = .Cells(9, 1, ds.Tables(0).Rows.Count + 9, 10) '21)
+            Dim rgAll As ExcelRange = .Cells(9, 1, ds.Tables(0).Rows.Count + 9, ds.Tables(0).Columns.Count - 5) '21)
             EpPlusDrawAllBorders(rgAll)
 
-            Dim rgAF As ExcelRange = .Cells(9, 1, ds.Tables(0).Rows.Count + 9, 10) '21)
+            Dim rgAF As ExcelRange = .Cells(9, 1, ds.Tables(0).Rows.Count + 9, ds.Tables(0).Columns.Count - 5) '21)
             rgAF.AutoFilter = True
 
-            Dim rgHeader As ExcelRange = .Cells(9, 1, 9, 10) '21)
+            Dim rgHeader As ExcelRange = .Cells(9, 1, 9, ds.Tables(0).Columns.Count - 5) '21)
             rgHeader.Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Center
             rgHeader.Style.VerticalAlignment = Style.ExcelVerticalAlignment.Center
             rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
@@ -561,7 +663,7 @@ Public Class HistoricalMonthlyForecast
 
                 Call up_Initialize()
                 Call up_FillCombo()
-                Call up_GridHeader(Format(Now.Date, "yyyyMM") & "01")
+                Call up_GridHeader_New(Format(Now.Date, "yyyyMM") & "01", Format(Now.Date, "yyyyMM") & "01")
                 'GridViewFeaturesHelper.SetupGlobalGridViewBehavior(grid)
 
             End If
@@ -585,7 +687,7 @@ Public Class HistoricalMonthlyForecast
             Dim pAction As String = Split(e.Parameters, "|")(0)
             Select Case pAction
                 Case "load"
-                    Call up_GridLoad()
+                    Call up_GridLoad_New()
 
                     If grid.VisibleRowCount = 0 Then
                         Call clsMsg.DisplayMessage(lblInfo, "2001", clsMessage.MsgType.InformationMessage)
@@ -594,7 +696,7 @@ Public Class HistoricalMonthlyForecast
                         grid.PageIndex = 0
                     End If
                 Case "clear"
-                    Call up_GridHeader(Format(dtPOPeriod.Value, "yyyyMM") & "01")
+                    Call up_GridHeader_New(Format(dtPOPeriod.Value, "yyyyMM") & "01", Format(dtPOPeriodTo.Value, "yyyyMM") & "01")
 
                 Case "excel"
                     'up_LoadExcel()
@@ -825,7 +927,7 @@ Public Class HistoricalMonthlyForecast
     End Sub
 
     Private Sub grid_PageIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles grid.PageIndexChanged
-        Call up_GridLoad()
+        Call up_GridLoad_New()
     End Sub
 #End Region
 
@@ -931,16 +1033,14 @@ Public Class HistoricalMonthlyForecast
 
 
                 Dim dt As DataTable
-                dt = GetHeaderBandGrid(Format(dtPOPeriod.Value, "yyyyMM") & "01", clsGlobal.ConnectionString)
+                dt = GetHeaderBandGrid_New(Format(dtPOPeriod.Value, "yyyyMM") & "01", Format(dtPOPeriodTo.Value, "yyyyMM") & "01", clsGlobal.ConnectionString)
                 If dt.Rows.Count > 0 Then
-                    For i = 0 To dt.Rows.Count - 1
-                        .Cells(9, 10 + i, 9, 10 + i).Value = dt.Rows(i).Item("Nama").ToString
-                        .Cells(9, 10 + i, 9, 10 + i).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-                        .Cells(9, 10 + i, 9, 10 + i).Style.VerticalAlignment = Style.ExcelVerticalAlignment.Center
-                        .Cells(9, 10 + i, 9, 10 + i).Style.Font.Size = 10
-                        .Cells(9, 10 + i, 9, 10 + i).Style.Font.Name = "Arial"
-
-
+                    For i = 1 To dt.Rows.Count() - 8
+                        .Cells(9, 9 + i, 9, 9 + i).Value = dt.Rows(i + 6 + 1).Item("Nama").ToString
+                        .Cells(9, 9 + i, 9, 9 + i).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
+                        .Cells(9, 9 + i, 9, 9 + i).Style.VerticalAlignment = Style.ExcelVerticalAlignment.Center
+                        .Cells(9, 9 + i, 9, 9 + i).Style.Font.Size = 10
+                        .Cells(9, 9 + i, 9, 9 + i).Style.Font.Name = "Arial"
                     Next
 
                 End If
@@ -950,7 +1050,7 @@ Public Class HistoricalMonthlyForecast
                 'Dim dtTo = Format(dtDateTo.Value, "yyyy-MM-dd")
 
                 Dim ds As DataSet
-                ds = GetData()
+                ds = GetDataExcel()
 
                 Dim rgHeader As ExcelRange
                 Dim No As Integer, RNo As Integer = 0
@@ -985,151 +1085,88 @@ Public Class HistoricalMonthlyForecast
                     .Cells(i + 10, 9, i + 10, 9).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Center
 
                     Dim bln As String
-                    For icol = 0 To 0'11
-                        bln = CStr(icol + 1)
+                    For icol = 1 To dt.Rows.Count() - 8 '0'11
+                        bln = CStr(icol)
                         If (IsDBNull(ds.Tables(0).Rows(i)(bln))) Then
-                            .Cells(i + 10, 10 + icol, i + 10, 10 + icol).Value = ds.Tables(0).Rows(i)(bln).ToString()
+                            .Cells(i + 10, 9 + icol, i + 10, 9 + icol).Value = ds.Tables(0).Rows(i)(bln).ToString()
                         Else
-                            .Cells(i + 10, 10 + icol, i + 10, 10 + icol).Value = IIf(ds.Tables(0).Rows(i)(bln).ToString = "0", "0", Format(CDbl(ds.Tables(0).Rows(i)(bln).ToString), "###,##"))
-                        End If
-                        .Cells(i + 10, 10 + icol, i + 10, 10 + icol).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
+                            .Cells(i + 10, 9 + icol, i + 10, 9 + icol).Value = IIf(ds.Tables(0).Rows(i)(bln).ToString = "0", "0", Format(CDbl(ds.Tables(0).Rows(i)(bln).ToString), "###,##"))
 
-                    Next
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("1"))) Then
-                    '    .Cells(i + 10, 10, i + 10, 10).Value = ds.Tables(0).Rows(i)("1").ToString()
-                    'Else
-                    '    .Cells(i + 10, 10, i + 10, 10).Value = Format(CDbl(ds.Tables(0).Rows(i)("1").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 10, i + 10, 10).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("2"))) Then
-                    '    .Cells(i + 10, 11, i + 10, 11).Value = ds.Tables(0).Rows(i)("2").ToString()
-                    'Else
-                    '    .Cells(i + 10, 11, i + 10, 11).Value = Format(CDbl(ds.Tables(0).Rows(i)("2").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 11, i + 10, 11).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("3"))) Then
-                    '    .Cells(i + 10, 12, i + 10, 12).Value = ds.Tables(0).Rows(i)("3").ToString()
-                    'Else
-                    '    .Cells(i + 10, 12, i + 10, 12).Value = Format(CDbl(ds.Tables(0).Rows(i)("3").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 12, i + 10, 12).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("4"))) Then
-                    '    .Cells(i + 10, 13, i + 10, 13).Value = ds.Tables(0).Rows(i)("4").ToString()
-                    'Else
-                    '    .Cells(i + 10, 13, i + 10, 13).Value = Format(CDbl(ds.Tables(0).Rows(i)("4").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 13, i + 10, 13).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("5"))) Then
-                    '    .Cells(i + 10, 14, i + 10, 14).Value = ds.Tables(0).Rows(i)("5").ToString()
-                    'Else
-                    '    .Cells(i + 10, 14, i + 10, 14).Value = Format(CDbl(ds.Tables(0).Rows(i)("5").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 14, i + 10, 14).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("6"))) Then
-                    '    .Cells(i + 10, 15, i + 10, 15).Value = ds.Tables(0).Rows(i)("6").ToString()
-                    'Else
-                    '    .Cells(i + 10, 15, i + 10, 15).Value = Format(CDbl(ds.Tables(0).Rows(i)("6").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 15, i + 10, 15).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("7"))) Then
-                    '    .Cells(i + 10, 16, i + 10, 16).Value = ds.Tables(0).Rows(i)("7").ToString()
-                    'Else
-                    '    .Cells(i + 10, 16, i + 10, 16).Value = Format(CDbl(ds.Tables(0).Rows(i)("7").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 16, i + 10, 16).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("8"))) Then
-                    '    .Cells(i + 10, 17, i + 10, 17).Value = ds.Tables(0).Rows(i)("8").ToString()
-                    'Else
-                    '    .Cells(i + 10, 17, i + 10, 17).Value = Format(CDbl(ds.Tables(0).Rows(i)("8").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 17, i + 10, 17).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("9"))) Then
-                    '    .Cells(i + 10, 18, i + 10, 18).Value = ds.Tables(0).Rows(i)("9").ToString()
-                    'Else
-                    '    .Cells(i + 10, 18, i + 10, 18).Value = Format(CDbl(ds.Tables(0).Rows(i)("9").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 18, i + 10, 18).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("10"))) Then
-                    '    .Cells(i + 10, 19, i + 10, 19).Value = ds.Tables(0).Rows(i)("10").ToString()
-                    'Else
-                    '    .Cells(i + 10, 19, i + 10, 19).Value = Format(CDbl(ds.Tables(0).Rows(i)("10").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 19, i + 10, 19).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("11"))) Then
-                    '    .Cells(i + 10, 20, i + 10, 20).Value = ds.Tables(0).Rows(i)("11").ToString()
-                    'Else
-                    '    .Cells(i + 10, 20, i + 10, 20).Value = Format(CDbl(ds.Tables(0).Rows(i)("11").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 20, i + 10, 20).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    'If (IsDBNull(ds.Tables(0).Rows(i)("12"))) Then
-                    '    .Cells(i + 10, 21, i + 10, 21).Value = ds.Tables(0).Rows(i)("12").ToString()
-                    'Else
-                    '    .Cells(i + 10, 21, i + 10, 21).Value = Format(CDbl(ds.Tables(0).Rows(i)("12").ToString), "###,##")
-                    'End If
-                    '.Cells(i + 10, 21, i + 10, 21).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
-
-                    
-                    'coloring cell
-                    Dim dt2 As DataTable
-                    Dim bulan As String
-                    dt2 = GetHeaderBandGrid(Format(dtPOPeriod.Value, "yyyyMM") & "01", clsGlobal.ConnectionString)
-                    If dt.Rows.Count > 0 Then
-                        For i2 = 0 To dt2.Rows.Count - 1
-                            bulan = CStr(i2 + 1)
-                            If dt2.Rows(i2).Item("SeqNo").ToString() = bulan Then
-                                If ds.Tables(0).Rows(i)("Rev").ToString().Trim = "0" Then
-                                    If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
-                                        rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
-                                        rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
-                                        rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LimeGreen)
-                                    End If
-                                ElseIf ds.Tables(0).Rows(i)("Rev").ToString().Trim = "1" Or _
-                                       ds.Tables(0).Rows(i)("Rev").ToString().Trim = "2" Or _
-                                       ds.Tables(0).Rows(i)("Rev").ToString().Trim = "3" Then
-
-                                    If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
-                                        rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
-                                        rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
-                                        rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LemonChiffon)
-
-                                    End If
-                                Else
-                                    If (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Capacity" Or _
-                                        ds.Tables(0).Rows(i)("Data").ToString().Trim = "LTF 78-1" Or _
-                                        ds.Tables(0).Rows(i)("Data").ToString().Trim = "LTF 78-2") Then
-                                        If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
-                                            rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
-                                            rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
-                                            rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LemonChiffon)
-
-                                        End If
-                                    ElseIf (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Actual Order" Or _
-                                            ds.Tables(0).Rows(i)("Data").ToString().Trim = "Actual Delivery") Then
-                                        If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
-                                            rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
-                                            rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
-                                            rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LimeGreen)
-                                        End If
-
-                                    End If
-                                End If
+                            If (ds.Tables(0).Rows(i)("Rev").ToString().Trim = "0") Then
+                                rgHeader = .Cells(i + 10, 9 + icol, i + 10, 9 + icol)
+                                rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                                rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LimeGreen)
+                            ElseIf (ds.Tables(0).Rows(i)("Rev").ToString().Trim <> "0") And (ds.Tables(0).Rows(i)("Rev").ToString().Trim <> "") Then
+                                rgHeader = .Cells(i + 10, 9 + icol, i + 10, 9 + icol)
+                                rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                                rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LemonChiffon)
                             End If
 
+                            If (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Actual Order") Or (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Actual Delivery") Then
+                                rgHeader = .Cells(i + 10, 9 + icol, i + 10, 9 + icol)
+                                rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                                rgHeader.Style.Fill.BackgroundColor.SetColor(Color.MediumSeaGreen)
+                            End If
 
-                        Next
-                    End If
+                            If (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Capacity") Or (ds.Tables(0).Rows(i)("Data").ToString().Trim = "LTF 78-1") Or (ds.Tables(0).Rows(i)("Data").ToString().Trim = "LTF 78-2") Then
+                                rgHeader = .Cells(i + 10, 9 + icol, i + 10, 9 + icol)
+                                rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                                rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LemonChiffon)
+                            End If
+
+                        End If
+                        .Cells(i + 10, 9 + icol, i + 10, 9 + icol).Style.HorizontalAlignment = Style.ExcelHorizontalAlignment.Right
+                    Next
+                    
+                    'coloring cell
+                    'Dim dt2 As DataTable
+                    'Dim bulan As String
+                    'dt2 = GetHeaderBandGrid_New(Format(dtPOPeriod.Value, "yyyyMM") & "01", Format(dtPOPeriodTo.Value, "yyyyMM") & "01", clsGlobal.ConnectionString)
+                    'If dt.Rows.Count > 0 Then
+                    '    For i2 = 0 To dt2.Rows.Count - 1
+                    '        bulan = CStr(i2 + 1)
+                    '        If dt2.Rows(i2).Item("SeqNo").ToString() = bulan Then
+                    '            If ds.Tables(0).Rows(i)("Rev").ToString().Trim = "0" Then
+                    '                If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
+                    '                    rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
+                    '                    rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                    '                    rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LimeGreen)
+                    '                End If
+                    '            ElseIf ds.Tables(0).Rows(i)("Rev").ToString().Trim = "1" Or _
+                    '                   ds.Tables(0).Rows(i)("Rev").ToString().Trim = "2" Or _
+                    '                   ds.Tables(0).Rows(i)("Rev").ToString().Trim = "3" Then
+
+                    '                If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
+                    '                    rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
+                    '                    rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                    '                    rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LemonChiffon)
+
+                    '                End If
+                    '            Else
+                    '                If (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Capacity" Or _
+                    '                    ds.Tables(0).Rows(i)("Data").ToString().Trim = "LTF 78-1" Or _
+                    '                    ds.Tables(0).Rows(i)("Data").ToString().Trim = "LTF 78-2") Then
+                    '                    If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
+                    '                        rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
+                    '                        rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                    '                        rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LemonChiffon)
+
+                    '                    End If
+                    '                ElseIf (ds.Tables(0).Rows(i)("Data").ToString().Trim = "Actual Order" Or _
+                    '                        ds.Tables(0).Rows(i)("Data").ToString().Trim = "Actual Delivery") Then
+                    '                    If Not IsDBNull(ds.Tables(0).Rows(i)(bulan)) Then
+                    '                        rgHeader = .Cells(i + 10, 10 + i2, i + 10, 10 + i2)
+                    '                        rgHeader.Style.Fill.PatternType = Style.ExcelFillStyle.Solid
+                    '                        rgHeader.Style.Fill.BackgroundColor.SetColor(Color.LimeGreen)
+                    '                    End If
+
+                    '                End If
+                    '            End If
+                    '        End If
+
+
+                    '    Next
+                    'End If
 
                     No = No + 1
                     PartNoTemp = ds.Tables(0).Rows(i)("PartNoSort").ToString().Trim
@@ -1154,7 +1191,7 @@ Public Class HistoricalMonthlyForecast
     End Sub
 
     Private Sub up_LoadExcel(Optional ByRef pErr As String = "")
-        up_GridLoad()
+        up_GridLoad_New()
         Dim ps As New PrintingSystem()
 
         Dim link1 As New PrintableComponentLink(ps)

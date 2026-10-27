@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class HistoricalMonthlyForecast
-
+    
     '''<summary>
     '''ASPxLabel4 control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxLabel4 As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''dtPOPeriod control.
     '''</summary>
@@ -30,7 +30,16 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents dtPOPeriod As Global.DevExpress.Web.ASPxEditors.ASPxTimeEdit
-
+    
+    '''<summary>
+    '''dtPOPeriodTo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents dtPOPeriodTo As Global.DevExpress.Web.ASPxEditors.ASPxTimeEdit
+    
     '''<summary>
     '''ASPxLabel1 control.
     '''</summary>
@@ -39,7 +48,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxLabel1 As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''cboAffiliateID control.
     '''</summary>
@@ -48,7 +57,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cboAffiliateID As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
-
+    
     '''<summary>
     '''txtAffiliateName control.
     '''</summary>
@@ -57,7 +66,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtAffiliateName As Global.DevExpress.Web.ASPxEditors.ASPxTextBox
-
+    
     '''<summary>
     '''ASPxLabel2 control.
     '''</summary>
@@ -66,7 +75,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxLabel2 As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''cboSupplier control.
     '''</summary>
@@ -75,7 +84,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cboSupplier As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
-
+    
     '''<summary>
     '''txtSupplierName control.
     '''</summary>
@@ -84,7 +93,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtSupplierName As Global.DevExpress.Web.ASPxEditors.ASPxTextBox
-
+    
     '''<summary>
     '''ASPxLabel3 control.
     '''</summary>
@@ -93,7 +102,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxLabel3 As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''cbopart control.
     '''</summary>
@@ -102,7 +111,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cbopart As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
-
+    
     '''<summary>
     '''txtpart control.
     '''</summary>
@@ -111,7 +120,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtpart As Global.DevExpress.Web.ASPxEditors.ASPxTextBox
-
+    
     '''<summary>
     '''ASPxLabel6 control.
     '''</summary>
@@ -120,7 +129,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxLabel6 As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''cboRev control.
     '''</summary>
@@ -129,7 +138,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cboRev As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
-
+    
     '''<summary>
     '''btnSearch control.
     '''</summary>
@@ -138,7 +147,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSearch As Global.DevExpress.Web.ASPxEditors.ASPxButton
-
+    
     '''<summary>
     '''btnClear control.
     '''</summary>
@@ -147,7 +156,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnClear As Global.DevExpress.Web.ASPxEditors.ASPxButton
-
+    
     '''<summary>
     '''lblInfo control.
     '''</summary>
@@ -156,7 +165,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblInfo As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''ASPxImage1 control.
     '''</summary>
@@ -165,7 +174,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxImage1 As Global.DevExpress.Web.ASPxEditors.ASPxImage
-
+    
     '''<summary>
     '''ASPxLabel5 control.
     '''</summary>
@@ -174,7 +183,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ASPxLabel5 As Global.DevExpress.Web.ASPxEditors.ASPxLabel
-
+    
     '''<summary>
     '''grid control.
     '''</summary>
@@ -183,7 +192,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents grid As Global.DevExpress.Web.ASPxGridView.ASPxGridView
-
+    
     '''<summary>
     '''btnSubMenu control.
     '''</summary>
@@ -192,7 +201,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSubMenu As Global.DevExpress.Web.ASPxEditors.ASPxButton
-
+    
     '''<summary>
     '''btnexcel control.
     '''</summary>
@@ -201,7 +210,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnexcel As Global.DevExpress.Web.ASPxEditors.ASPxButton
-
+    
     '''<summary>
     '''GridExporter control.
     '''</summary>
@@ -210,7 +219,7 @@ Partial Public Class HistoricalMonthlyForecast
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GridExporter As Global.DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter
-
+    
     '''<summary>
     '''ge control.
     '''</summary>

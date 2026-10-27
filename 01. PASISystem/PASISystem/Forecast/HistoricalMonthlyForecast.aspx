@@ -90,11 +90,19 @@
                                                     <dx:ASPxTimeEdit ID="dtPOPeriod" runat="server" ClientInstanceName="dtPOPeriod"
                                                         DisplayFormatString="MMM yyyy" EditFormat="Date" EditFormatString="MMM yyyy"
                                                         Width="170px" HorizontalAlign="Left">
-                                                        
+                                                        <ClientSideEvents ValueChanged="function(s, e) {
+                                                            grid.PerformCallback('clear');
+                                                        }" />
                                                     </dx:ASPxTimeEdit>
                                                 </td>
                                                 <td>
-                                                   
+                                                   <dx:ASPxTimeEdit ID="dtPOPeriodTo" runat="server" ClientInstanceName="dtPOPeriodTo"
+                                                        DisplayFormatString="MMM yyyy" EditFormat="Date" EditFormatString="MMM yyyy"
+                                                        Width="170px" HorizontalAlign="Left">
+                                                       <ClientSideEvents ValueChanged="function(s, e) {
+                                                            grid.PerformCallback('clear');
+                                                        }" />
+                                                    </dx:ASPxTimeEdit>
                                                 </td>
                                             </tr>
                                         </table>
