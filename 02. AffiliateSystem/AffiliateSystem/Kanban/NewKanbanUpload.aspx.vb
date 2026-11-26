@@ -1050,7 +1050,7 @@ EndProcedure:
                             "AND Kanbanno = '" & ds.Tables(0).Rows(iRow)("KanbanNo") & "' " & vbCrLf
 
                         ls_sql = ls_sql + " DECLARE @KanbanNo AS VARCHAR(25) , " & vbCrLf & _
-                                          "     @SupplierID AS VARCHAR(10) , " & vbCrLf & _
+                                          "     @SupplierID AS VARCHAR(20) , " & vbCrLf & _
                                           "     @SupplierName AS VARCHAR(100) , " & vbCrLf & _
                                           "     @DockID AS VARCHAR(20) , " & vbCrLf & _
                                           "     @PartNo AS VARCHAR(50) , " & vbCrLf & _
@@ -1076,7 +1076,7 @@ EndProcedure:
 
                         ls_sql = ls_sql + "     @ETAPASI AS VARCHAR(10) , " & vbCrLf & _
                                           "     @BoxNo AS VARCHAR(10) , " & vbCrLf & _
-                                          "     @AffiliateID AS VARCHAR(10) , " & vbCrLf & _
+                                          "     @AffiliateID AS VARCHAR(20) , " & vbCrLf & _
                                           "     @Cycle AS VARCHAR(3), " & vbCrLf & _
                                           "     @sequence AS Numeric(10,0), " & vbCrLf & _
                                           "     @LabelCode AS VARCHAR(10) " & vbCrLf & _
@@ -1084,8 +1084,8 @@ EndProcedure:
                                           "     SET @AffCode = (Select Top 1 Case When ISNULL(RTRIM(AffiliateCode),'') = '' Then '32G8' Else RTRIM(AffiliateCode) End from MS_Affiliate where AffiliateID = '" & Session("AffiliateID") & "') " & vbCrLf & _
                                           "   SELECT TOP 1 " & vbCrLf & _
                                           "             KanbanNo = CONVERT(CHAR(25), '') , " & vbCrLf & _
-                                          "             AffiliateID = CONVERT(CHAR(10), '') , " & vbCrLf & _
-                                          "             SupplierID = CONVERT(CHAR(10), '') , " & vbCrLf & _
+                                          "             AffiliateID = CONVERT(CHAR(20), '') , " & vbCrLf & _
+                                          "             SupplierID = CONVERT(CHAR(20), '') , " & vbCrLf & _
                                           "             SupplierName = CONVERT(CHAR(100), '') , " & vbCrLf & _
                                           "             PartNo = CONVERT(CHAR(50), '') , " & vbCrLf & _
                                           "             PartName = CONVERT(CHAR(100), '') , " & vbCrLf
